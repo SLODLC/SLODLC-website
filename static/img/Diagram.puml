@@ -1,0 +1,11 @@
+@startuml Diagram
+!theme sandstone
+
+"**Step 1** Create a Project" --> "**Step 2** Create a Data Source"
+--> "**Step 3** Create s Service"
+--> "**Step 4** Create a Data Source"
+--> "**Step 5** Create an SLO"
+--> "**Step 6** Attach Labels, Alert Policies, and Alert Methods"
+--> You're good to go!
+
+@enduml
