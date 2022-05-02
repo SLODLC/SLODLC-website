@@ -1,0 +1,17 @@
+.footer {
+    border-top: 1px solid #989898;
+}
+.footer__social-icon {
+  margin-right: 15px;
+}
+.footer__logo {
+  margin-top: 0;
+}
+
+.footer__link-item {
+  font-size: 12px;
+}
+
+.footer__copyright {
+  font-size: 10px;
+}

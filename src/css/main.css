@@ -1,0 +1,52 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+@import url(https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+:root {
+  --ifm-color-primary: #27bad3;
+  --ifm-color-primary-dark: #23a7be;
+  --ifm-color-primary-darker: #219eb3;
+  --ifm-color-primary-darkest: #1b8294;
+  --ifm-color-primary-light: #39c3da;
+  --ifm-color-primary-lighter: #43c6dc;
+  --ifm-color-primary-lightest: #63d0e2;
+
+  --ifm-color-tertiary: #12485f;
+  --ifm-color-tertiary-dark: #104156;
+  --ifm-color-tertiary-darker: #0f3d51;
+  --ifm-color-tertiary-darkest: #0d3242;
+  --ifm-color-tertiary-light: #144f69;
+  --ifm-color-tertiary-lighter: #15536d;
+  --ifm-color-tertiary-lightest: #175e7b;
+
+  --ifm-code-font-size: 95%;
+  --ifm-navbar-height: 80px;
+
+  --ifm-font-family-base: 'Mulish', sans-serif;
+
+  --nobl9-font-weight-regular: 400;
+  --nobl9-font-weight-bold: 700;
+
+  --ifm-menu-sidebar-color: #fff;
+  --ifm-footer-background-color: #fff;
+
+  --ifm-sidebar-link-color: #66E4EE;
+  --ifm-link-color: #008293;
+  --ifm-link-hover-color: #0075A8;
+
+  --ifm-toc-padding-horizontal: 16px;
+  --ifm-toc-padding-vertical: 8px;
+}
+
+@import url('./navbar.css');
+@import url('./sidebar.css');
+@import url('./footer.css');
+@import url('./misc.css');
+@import url('./content.css');
+@import url('./toc.css');
