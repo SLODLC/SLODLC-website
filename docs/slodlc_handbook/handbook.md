@@ -2,13 +2,14 @@
 id: getting-started
 title: SLO Development Lifecycle
 slug: /
-sidebar_label: SLO Development Lifecycle
+sidebar_label: SLODLC Handbook
 sidebar_position: 1
-description: Overview of the SLO Development Lifecycle
+description: SLO Development Lifecycle handbook
 keywords:
   - resources
   - slo
   - slodlc
+  - handbook
 ---
 # SERVICE LEVEL OBJECTIVES DEVELOPMENT LIFE CYCLE
 
