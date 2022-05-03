@@ -1,9 +1,8 @@
 ---
 id: handbook
 title: SLO Development Lifecycle
-slug: /handbook
 sidebar_label: SLODLC Handbook
-sidebar_position: 1
+sidebar_position: 10
 description: SLO Development Lifecycle handbook
 keywords:
   - resources
