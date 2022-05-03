@@ -101,9 +101,8 @@ Software development follows a natural lifecycle, usually referred to as an SDLC
 
 We want the SLODLC to be a living project, evolving over time and incorporating the best industry ideas and new approaches to SLO adoption - it’s a mission called continuous improvement. The SLODLC should be treated as a starting point, and we encourage you to experiment with this methodology - innovate, and extend it, feeding your ideas back into the community. DLC can also stand for Downloadable Content, and we want to share examples and templates that can be used to speed up the adoption of SLOs. As with the SLODLC itself, we invite you to use them freely, adapt to your needs, and share your changes with the SLODLC community.
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](img/slodlc_overview.png "image_tooltip")
 
 ## Phase 0: Initiate
 
