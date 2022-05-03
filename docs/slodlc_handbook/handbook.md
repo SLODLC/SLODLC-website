@@ -1,5 +1,5 @@
 ---
-id: getting-started
+id: handbook
 title: SLO Development Lifecycle
 slug: /
 sidebar_label: SLODLC Handbook
