@@ -557,82 +557,30 @@ Despite which adoption path you will use and start with (paths are explained in 
 
 The table of SLO knowledge artifacts is mapped to the **SLO Maturity Model** (explained in the **SLO Adoption Framework** document). It means that you should have solidly established artifacts on each maturity level as in the following table: 
 
-<table>
-  <tr>
-   <td><strong>SLO Maturity Level</strong>
-   </td>
-   <td><strong>Knowledge Artifacts</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Maturity Level 1 \
-Monitor and React</strong>
-   </td>
-   <td>
-<ul>
+| SLO Maturity Level | Knowledge Artifacts |
+|--------------------|---------------------|
+| Maturity Level 1 - Monitor and React | * SLI/SLO Documentation - comprehensive SLO documentation repository, documents, and links; a combination of SLODLC templates|
+|                 | * SLI/SLO Repository - one place for all SLIs and SLOs defined and implemented connected to SLO metadata like feedback, satisfaction surveys, visualized history data, and all related information; a combination of SLODLC templates|
+|                 | * SLO Use Cases repository - a collection of all SLOs defined in the organization with case description for general understanding of all stakeholders|
+|                 | * SLI/SLO Templates - ready to use templates| 
+|-----------------|------------------------|
+| Maturity Level 2 - SLO Concepts | * Library of resources - organizational SLO/SRE library with various resources related and available to employees; for example digital collection of books and other materials |
+|                                 | * Case Studies repository - as an extension for SLO Use Cases repository with industry examples and references |
+|                                 | * Dashboards - combine your organization SLOs into present dashboards and/or make new dedicated; make them accessible and visible |
+|                                 | * Discussion board/forum - in most cases - an online place for SLO internal discussions |
+|                                 | * FAQs - all frequently asked questions related to SLOs in one place |
+|                                 | * Meetups - different meetings in the different formulas, those might be internal or external, one time meetings or recurring SLO community meetings |
+|                                 | * SLO Reports - dedicated repository of pre-prepared ones or dedicated solution for reports ad hoc generation |
+|-----------------|------------------------|
+| Maturity Level 3 Full SLO Adoption | * Blog posts - internal - organization portal and/or external on the website or in social media |
+|                                    | * Conferences - your SLO practitioners might attend as speakers or you can establish a closed internal conference for your organization |
+|                                    | * Newsletters - every successful organizational change needs outbound communication; newsletters might be used in various conditions and situations |
+|                                    | * Postmortems/Runbooks SLO References - those artifacts are vital for successful Incident and Problem Management enriching postmortems and runbooks for extra SLO insights |
+|                                    | * Social media - your organization might be an active social media participant and share knowledge freely, it's a good idea to select one social media platform and manage outbound social media communication in SLO topic to exchange experience |
+|                                    | * Benchmark repository - all information related to SLO experience in the industries |
+|                                    | * Big scale reviews - from time to time, put SLOs in the center of a town hall or other big organization gathering |
+|                                    | * Established SLO Process repository with tools for continuous improvements, historical and statistical data, recommendations for improvement |
 
-<li>SLI/SLO Documentation - comprehensive SLO documentation repository, documents, and links; a combination of SLODLC templates
-
-<li>SLI/SLO Repository - one place for all SLIs and SLOs defined and implemented connected to SLO metadata like feedback, satisfaction surveys, visualized history data, and all related information; a combination of SLODLC templates
-
-<li>SLO Use Cases repository - a collection of all SLOs defined in the organization with case description for general understanding of all stakeholders
-
-<li>SLI/SLO Templates - ready to use templates
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Maturity Level 2 \
-SLO Concepts</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Library of resources - organizational SLO/SRE library with various resources related and available to employees; for example digital collection of books and other materials
-
-<li>Case Studies repository - as an extension for SLO Use Cases repository with industry examples and references
-
-<li>Dashboards - combine your organization SLOs into present dashboards and/or make new dedicated; make them accessible and visible
-
-<li>Discussion board/forum - in most cases - an online place for SLO internal discussions
-
-<li>FAQs - all frequently asked questions related to SLOs in one place
-
-<li>Meetups - different meetings in the different formulas, those might be internal or external, one time meetings or recurring SLO community meetings
-
-<li>SLO Reports - dedicated repository of pre-prepared ones or dedicated solution for reports ad hoc generation
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Maturity Level 3 \
-Full SLO Adoption</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Blog posts - internal - organization portal and/or external on the website or in social media
-
-<li>Conferences - your SLO practitioners might attend as speakers or you can establish a closed internal conference for your organization
-
-<li>Newsletters - every successful organizational change needs outbound communication; newsletters might be used in various conditions and situations
-
-<li>Postmortems/Runbooks SLO References - those artifacts are vital for successful Incident and Problem Management enriching postmortems and runbooks for extra SLO insights
-
-<li>Social media - your organization might be an active social media participant and share knowledge freely, it's a good idea to select one social media platform and manage outbound social media communication in SLO topic to exchange experience
-
-<li>Benchmark repository - all information related to SLO experience in the industries
-
-<li>Big scale reviews - from time to time, put SLOs in the center of a town hall or other big organization gathering
-
-<li>Established SLO Process repository with tools for continuous improvements, historical and statistical data, recommendations for improvement
-</li>
-</ul>
-   </td>
-  </tr>
-</table>
 
 You may wish to establish the **SLO Training Programs** or more advanced **Workshops** or **Bootcamps**. Doing so builds strong motivation for the target audience to learn the topic by highlighting SLO benefits, opportunities, and success stories. During any training program, monitor participant feedback, what are the reactions, and what is the general interest. Conduct a survey after the training. Evaluate the whole program according to the gathered feedback. There are several practices for developing a successful SLO training program we can share, as Nobl9 has a long history of SLO Bootcamps. Let's start with a qualified, professional SLO trainer, a role responsible for training program execution outcomes - an **SLO Champion** (also known as Advocate or Coach). For this role, you may train an internal trainer or hire an industry consultant with training experience.
 
