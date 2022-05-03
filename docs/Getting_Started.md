@@ -14,6 +14,11 @@ keywords:
 
 Welcome, tempus quam pellentesque nec nam aliquam sem et tortor consequat. Neque vitae tempus quam pellentesque nec nam. Purus semper eget duis at tellus at.
 
+## SLO Lifecycle Development Image
+
+[ADD IMAGE!]
+<img src="/img/mydiagram.svg" alt="diagram" height="200px" alt="resources-diagram" title="Image 1: Creating your first SLO"></img>
+
 ## The Top 5 Challenges to SLO Adoption
 
 :::tip
