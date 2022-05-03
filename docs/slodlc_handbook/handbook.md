@@ -1,4 +1,18 @@
- SERVICE LEVEL OBJECTIVES DEVELOPMENT LIFE CYCLE HANDBOOK
+---
+id: handbook
+title: SLO Development Lifecycle
+slug: /docs/handbook
+sidebar_label: SLODLC Handbook
+sidebar_position: 1
+description: SLO Development Lifecycle handbook
+keywords:
+  - resources
+  - slo
+  - slodlc
+  - handbook
+---
+
+SERVICE LEVEL OBJECTIVES DEVELOPMENT LIFE CYCLE HANDBOOK
 
 # Introduction
 
