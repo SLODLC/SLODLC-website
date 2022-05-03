@@ -12,12 +12,12 @@ keywords:
 ---
 # The SLO Development Lifecycle
 
-Welcome, tempus quam pellentesque nec nam aliquam sem et tortor consequat. Neque vitae tempus quam pellentesque nec nam. Purus semper eget duis at tellus at.
+The Service Level Objective Development Lifecycle (SLODLC) is a repeatable methodology for creating metrics that matter to service-centric organizations. SLODLC was created by practitioners in the community with the intent of creating practical, useful, actionable, step-by-step materials, templates, and examples to aid organizations in their journey to adopt SLOs in order to better quantify user expectations, deliver technology services efficiently, and better manage the inherent tradeoffs in building a digital business, SLODLC is an evolutionary open source project and welcomes input from the community of experts who are driving the SLO revolution.
 
-## SLO Lifecycle Development Image
+## SLO Development Lifecycle
 
-[ADD IMAGE!]
-<img src="/img/mydiagram.svg" alt="diagram" height="200px" alt="resources-diagram" title="Image 1: Creating your first SLO"></img>
+test
+<img src="/img/SLO_development_lifecycle_9shape-01.png" width="100%" alt="diagram" alt="resources-diagram" title="SLODLC"></img>
 
 ## The Top 5 Challenges to SLO Adoption
 
@@ -43,15 +43,14 @@ Mauris pellentesque pulvinar pellentesque habitant morbi.
 
 * Extensible Model Fit's Existing Practices
 
-## SLO Lifecycle Development Image
+## SLO Development Lifecycle
 
-[ADD IMAGE!]
-<img src="/img/mydiagram.svg" alt="diagram" height="200px" alt="resources-diagram" title="Image 1: Creating your first SLO"></img>
+<img src="/img/SLO_development_lifecycle_9shape-01.png" width="100%" alt="diagram" alt="resources-diagram" title="SLODLC"></img>
 
 ### SLO Adoption Maturity Model
 
 [ADD IMAGE HERE]
-<img src="/img/mydiagram.svg" alt="diagram" height="200px" alt="resources-diagram" title="Image 1: Creating your first SLO"></img>
+<img src="/img/mydiagram.svg" alt="diagram" width="100%" alt="resources-diagram" title="Image 1: Creating your first SLO"></img>
 
 ## Useful Links
 
