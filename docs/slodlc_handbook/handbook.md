@@ -65,7 +65,7 @@ As a **Composite SLO**, we understand three types of SLOs:
 2. SLO crafted with several SLOs to create a new Composite Error Budget calculation aggregating each error budget of all the SLOs.
 3. SLO with a combination of variants 1 and 2; For example, a very complex SLO build with 3 different SLOs from different services, each build with different composite SLI configurations of both availability and latency thresholds (even from other data sources) to get an end-to-end view of overall reliability performance.
 
-<span style="text-decoration:underline;">From the **SLODLC Handbook** perspective, this topic will not be deeply elaborated on because it is very SLO platform implementation-oriented, not platform-agnostic as SLODLC wants to be.</span>
+<u>From the **SLODLC Handbook** perspective, this topic will not be deeply elaborated on because it is very SLO platform implementation-oriented, not platform-agnostic as SLODLC wants to be.</u>
 
 **DevOps** - employees who are responsible for the development of technical solutions, their maintenance, and operation. They use Agile mindset, methods and techniques with the help of dedicated frameworks and tools for software and infrastructure.
 
