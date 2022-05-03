@@ -16,6 +16,7 @@ The Service Level Objective Development Lifecycle (SLODLC) is a repeatable metho
 
 ## SLO Development Lifecycle
 
+test
 <img src="/img/SLO_development_lifecycle_9shape-01.png" width="100%" alt="diagram" alt="resources-diagram" title="SLODLC"></img>
 
 ## The Top 5 Challenges to SLO Adoption
