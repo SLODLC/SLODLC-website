@@ -8,7 +8,7 @@ keywords:
 - yaml
 - SLO
 ---
-# YAML Guide [SMALL CHANGE FOR TESTING PRODUCTION DEPLOYMENT FLOW - AHALES]
+# YAML Guide
 
 This document explains how Nobl9 configurations are represented in the `sloctl` API, and how you can express them in _.yaml_ format.
 
