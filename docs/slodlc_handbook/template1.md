@@ -2,7 +2,7 @@
 id: template1
 title: template1
 sidebar_label: Template 1
-sidebar_position: 20
+sidebar_position: 21
 description: Template 1
 keywords:
   - resources
