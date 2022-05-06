@@ -13,23 +13,13 @@ const newNavConfig = [
   },
   {
     position: 'right',
-    label: 'Tutorials',
-    href: 'https://www.nobl9.com/explore/learning-center'
+    label: 'Join the conversation on Slack',
+    href: 'https://sloconf.slack.com/archives/C03D261DJM9'
   },
   {
     position: 'right',
-    label: 'Tips & Tricks',
-    href: 'https://www.nobl9.com/learn/tips'
-  },
-  {
-    position: 'right',
-    label: 'FAQs',
-    href: 'https://www.nobl9.com/learn/tips'
-  },
-  {
-    position: 'right',
-    label: 'Support',
-    href: 'https://www.nobl9.com/contact/support'
+    label: 'Contribute ideas on Git Hub',
+    href: 'https://github.com/SLODLC'
   },
 ]
 

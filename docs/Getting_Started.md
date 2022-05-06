@@ -25,8 +25,5 @@ The Service Level Objective Development Lifecycle (SLODLC) is a repeatable metho
 
 ## Useful Links
 
-* [Get Started with Nobl9](https://www.nobl9.com/learn/start)
-* [Your First Alert Policy](https://www.nobl9.com/learn/alerts)
-* [Your First SLO with Nobl9](https://www.nobl9.com/learn/slo)
-* [SRE Book](https://sre.google/sre-book/table-of-contents/)
-* [Nobl9 Blog](https://nobl9.com/resources/)
+* [SLODLC Slack Channel](https://sloconf.slack.com/archives/C03D261DJM9)
+* [SLODLC Git Hub](https://github.com/SLODLC)
