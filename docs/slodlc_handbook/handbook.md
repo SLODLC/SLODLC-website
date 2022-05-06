@@ -654,7 +654,6 @@ Monitor and React</strong>
 <li>SLO Use Cases repository - a collection of all SLOs defined in the organization with case description for general understanding of all stakeholders
 
 <li>SLI/SLO Templates - ready to use templates
-</li>
 </ul>
    </td>
   </tr>
