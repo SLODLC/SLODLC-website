@@ -687,22 +687,21 @@ Full SLO Adoption</strong>
    <td>
 <ul>
 
-<li>Blog posts - internal - organization portal and/or external on the website or in social media
+<li>Blog posts - internal - organization portal and/or external on the website or in social media</li>
 
-<li>Conferences - your SLO practitioners might attend as speakers or you can establish a closed internal conference for your organization
+<li>Conferences - your SLO practitioners might attend as speakers or you can establish a closed internal conference for your organization</li>
 
-<li>Newsletters - every successful organizational change needs outbound communication; newsletters might be used in various conditions and situations
+<li>Newsletters - every successful organizational change needs outbound communication; newsletters might be used in various conditions and situations</li>
 
-<li>Postmortems/Runbooks SLO References - those artifacts are vital for successful Incident and Problem Management enriching postmortems and runbooks for extra SLO insights
+<li>Postmortems/Runbooks SLO References - those artifacts are vital for successful Incident and Problem Management enriching postmortems and runbooks for extra SLO insights</li>
 
-<li>Social media - your organization might be an active social media participant and share knowledge freely, it's a good idea to select one social media platform and manage outbound social media communication in SLO topic to exchange experience
+<li>Social media - your organization might be an active social media participant and share knowledge freely, it's a good idea to select one social media platform and manage outbound social media communication in SLO topic to exchange experience</li>
 
-<li>Benchmark repository - all information related to SLO experience in the industries
+<li>Benchmark repository - all information related to SLO experience in the industries</li>
 
-<li>Big scale reviews - from time to time, put SLOs in the center of a town hall or other big organization gathering
+<li>Big scale reviews - from time to time, put SLOs in the center of a town hall or other big organization gathering</li>
 
-<li>Established SLO Process repository with tools for continuous improvements, historical and statistical data, recommendations for improvement
-</li>
+<li>Established SLO Process repository with tools for continuous improvements, historical and statistical data, recommendations for improvement</li>
 </ul>
    </td>
   </tr>
