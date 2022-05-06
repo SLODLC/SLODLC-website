@@ -16,14 +16,14 @@ keywords:
 ## HANDBOOK
 
 
-# Introduction
+## Introduction
 
 Just as the Software Development Life Cycle enables repeatable, reliable processes for creating good software, the **Service Level Objective Development Life Cycle** (SLODLC) is a repeatable methodology for defining reliability and performance goals for software services across an enterprise. This handbook provides detailed explanations, how-tos, and resources to make it easy for you to adopt the SLODLC, creating a common language and shared context for your organization.
 
 You might think that the adoption of SLO concepts is risky and complicated, but this handbook and the methodology it outlines will clarify what to do to reduce those risks and help you discover a practical and realistic path forward in your SLO adoption journey. For more on the topic of adoption, see the **SLO Adoption Framework** document (to be published soon).
 
 
-# How to Use This Document
+## How to Use This Document
 
 This document covers the essential aspects of the SLODLC:
 
@@ -46,14 +46,14 @@ Dedicated templates underpin the SLODLC Handbook. You will find references to th
 All SLODLC templates, together with examples, can be found here: [link].
 
 
-# Contributors
+## Contributors
 
 
 
 * SLOconf Slack "go-with-the-slo" workgroup
 
 
-# An Introduction to Service Level Objectives (SLOs)
+## An Introduction to Service Level Objectives (SLOs)
 
 You’re probably familiar with reliability in general and why it’s important for modern businesses - but for a better understanding of Service Level Objectives (SLOs), we need to define some common terms that set out the fundamentals.
 
@@ -103,7 +103,7 @@ This topic will not be deeply elaborated on in this handbook because it is highl
 * Building Secure & Reliable Systems, The Site Reliability Workbook, and Site Reliability Engineering (the three SRE books from Google, available [online](https://sre.google/books/))
 
 
-# The SLO Development Life Cycle (SLODLC)
+## The SLO Development Life Cycle (SLODLC)
 
 Why do we need a methodological approach (accelerators, enablers) to SLO adoption? Experience shows that the most challenging aspects of SLO adoption are:
 
@@ -119,7 +119,7 @@ Software development follows a natural life cycle, usually referred to as the SD
 
 We want the SLODLC to be a living project, evolving over time and incorporating the best industry ideas and new approaches to SLO adoption - a mission called **continuous improvement**. The SLODLC should be treated as a starting point, and we encourage you to experiment with this methodology: innovate and extend it, and feed your ideas back into the community. DLC can also stand for Downloadable Content, and in this spirit we will share examples and templates that can be used to speed up the adoption of SLOs. As with the SLODLC itself, we invite you to use them freely, adapt them to your needs, and share your changes with the SLODLC community.
 
-SLODLC FULL DIAGRAM PICTURE PLACEHOLDER - add it here!
+## SLODLC FULL DIAGRAM PICTURE PLACEHOLDER - add it here!
 
 
 ## Phase 0: Initiate
