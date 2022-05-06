@@ -647,13 +647,13 @@ Monitor and React</strong>
    <td>
 <ul>
 
-<li>SLI/SLO Documentation - comprehensive SLO documentation repository, documents, and links; a combination of SLODLC templates
+<li>SLI/SLO Documentation - comprehensive SLO documentation repository, documents, and links; a combination of SLODLC templates</li>
 
-<li>SLI/SLO Repository - one place for all SLIs and SLOs defined and implemented connected to SLO metadata like feedback, satisfaction surveys, visualized history data, and all related information; a combination of SLODLC templates
+<li>SLI/SLO Repository - one place for all SLIs and SLOs defined and implemented connected to SLO metadata like feedback, satisfaction surveys, visualized history data, and all related information; a combination of SLODLC templates</li>
 
-<li>SLO Use Cases repository - a collection of all SLOs defined in the organization with case description for general understanding of all stakeholders
+<li>SLO Use Cases repository - a collection of all SLOs defined in the organization with case description for general understanding of all stakeholders</li>
 
-<li>SLI/SLO Templates - ready to use templates
+<li>SLI/SLO Templates - ready to use templates</li>
 </ul>
    </td>
   </tr>
@@ -664,20 +664,19 @@ SLO Concepts</strong>
    <td>
 <ul>
 
-<li>Library of resources - organizational SLO/SRE library with various resources related and available to employees; for example digital collection of books and other materials
+<li>Library of resources - organizational SLO/SRE library with various resources related and available to employees; for example digital collection of books and other materials</li>
 
-<li>Case Studies repository - as an extension for SLO Use Cases repository with industry examples and references
+<li>Case Studies repository - as an extension for SLO Use Cases repository with industry examples and references</li>
 
-<li>Dashboards - combine your organization SLOs into present dashboards and/or make new dedicated; make them accessible and visible
+<li>Dashboards - combine your organization SLOs into present dashboards and/or make new dedicated; make them accessible and visible</li>
 
-<li>Discussion board/forum - in most cases - an online place for SLO internal discussions
+<li>Discussion board/forum - in most cases - an online place for SLO internal discussions</li>
 
-<li>FAQs - all frequently asked questions related to SLOs in one place
+<li>FAQs - all frequently asked questions related to SLOs in one place</li>
 
-<li>Meetups - different meetings in the different formulas, those might be internal or external, one time meetings or recurring SLO community meetings
+<li>Meetups - different meetings in the different formulas, those might be internal or external, one time meetings or recurring SLO community meetings</li>
 
-<li>SLO Reports - dedicated repository of pre-prepared ones or dedicated solution for reports ad hoc generation
-</li>
+<li>SLO Reports - dedicated repository of pre-prepared ones or dedicated solution for reports ad hoc generation</li>
 </ul>
    </td>
   </tr>
