@@ -2,8 +2,8 @@
   2 id: template1
   3 title: template1
   4 sidebar_label: Template 1
-  5 sidebar_position: 10
-  6 description: SLODLC - Template 1
+  5 sidebar_position: 20
+  6 description: "SLODLC - Template 1"
   7 keywords:
   8   - resources
   9   - slo
