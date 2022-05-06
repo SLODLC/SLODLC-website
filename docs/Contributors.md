@@ -12,8 +12,8 @@ keywords:
 # Contributors
 
 ## Founding members
-Kit Merker - Nobl9
-Sal Furino - Nobl9
+- Kit Merker - Nobl9
+- Sal Furino - Nobl9
 
 ## Sustaining Contributors
-sally sample - company
+- sally sample - company
