@@ -119,7 +119,8 @@ Software development follows a natural life cycle, usually referred to as the SD
 
 We want the SLODLC to be a living project, evolving over time and incorporating the best industry ideas and new approaches to SLO adoption - a mission called **continuous improvement**. The SLODLC should be treated as a starting point, and we encourage you to experiment with this methodology: innovate and extend it, and feed your ideas back into the community. DLC can also stand for Downloadable Content, and in this spirit we will share examples and templates that can be used to speed up the adoption of SLOs. As with the SLODLC itself, we invite you to use them freely, adapt them to your needs, and share your changes with the SLODLC community.
 
-### SLODLC FULL DIAGRAM PICTURE PLACEHOLDER - add it here!
+### SLODLC DIAGRAM
+<img src="/img/slodlc_overview.png" width="100%" alt="diagram" alt="resources-diagram" title="SLODLC"></img>
 
 
 ## Phase 0: Initiate
@@ -736,12 +737,11 @@ One more thing for the end - don't focus on default SLOs - look at your products
 This is the end of SLODLC - more about SLO adoptions in the **SLO Adoption Framework** document. We hope you enjoy the SLO ride with us! Make good use of all you learned from this handbook. We wish you all the best during your own SLO journey!
 
 
-# Templates
+## Templates
 
 
-
-1. SLODLC Business Case Worksheet
-2. SLODLC Discovery Worksheet
-3. SLODLC Design Worksheet
-4. SLODLC Implement Worksheet
-5. SLODLC Review Check Report
+1. SLODLC Business Case Worksheet - ADD LINK 
+2. SLODLC Discovery Worksheet  - ADD LINK
+3. SLODLC Design Worksheet - ADD LINK
+4. SLODLC Implement Worksheet - ADD LINK
+5. SLODLC Review Check Report - ADD LINK
