@@ -1,14 +1,14 @@
 ---
-id: template1
-title: template1
-sidebar_label: Template 1
+id: template4
+title: template4
+sidebar_label: Template 4
 sidebar_position: 24
-description: Template 1
+description: Template 4
 keywords:
   - resources
   - slo
   - slodlc
-  - template 1
+  - template 4
 ---
 
 # SLODLC TEMPLATE 1
