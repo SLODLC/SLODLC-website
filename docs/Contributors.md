@@ -11,7 +11,7 @@ keywords:
 ---
 # Contributors
 
-## Founding members
+## Founding Members
 - Kit Merker - Nobl9
 - Sal Furino - Nobl9
 
