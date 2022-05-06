@@ -1,15 +1,15 @@
 ---
-  2 id: template1
-  3 title: template1
-  4 sidebar_label: Template 1
-  5 sidebar_position: 20
-  6 description: Template 1
-  7 keywords:
-  8   - resources
-  9   - slo
- 10   - slodlc
- 11   - template 1
- 12 ---
+ id: template1
+ title: template1
+ sidebar_label: Template 1
+ sidebar_position: 20
+ description: Template 1
+ keywords:
+   - resources
+   - slo
+   - slodlc
+   - template 1
+ ---
 
 # SLODLC TEMPLATE 1
 
