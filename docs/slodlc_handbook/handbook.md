@@ -10,195 +10,238 @@ keywords:
   - slodlc
   - handbook
 ---
+# SERVICE LEVEL OBJECTIVES DEVELOPMENT LIFE CYCLE
 
-SERVICE LEVEL OBJECTIVES DEVELOPMENT LIFE CYCLE HANDBOOK
+
+## HANDBOOK
+
 
 # Introduction
 
-Just like the Software Development Life Cycle enables repeatable, reliable processes for creating good software, the **Service Level Objective Development Life Cycle** (SLODLC) is a repeatable methodology for defining reliability and performance goals for software services across an enterprise. This handbook walks through the SLODLC with detailed explanations, how-to's, and resources to make it easy for you to adopt the SLODLC, creating a shared context for your business/technology decision-making in a repeatable and scalable way.
+Just as the Software Development Life Cycle enables repeatable, reliable processes for creating good software, the **Service Level Objective Development Life Cycle** (SLODLC) is a repeatable methodology for defining reliability and performance goals for software services across an enterprise. This handbook provides detailed explanations, how-tos, and resources to make it easy for you to adopt the SLODLC, creating a common language and shared context for your organization.
 
-You might think that the adoption of SLO concepts is a risky and bumpy road, however, this handbook and methodology will clarify what to do, reduce adoption risks, and help you discover a practical and realistic path forward in your adoption journey (more on adoption topic in SLO Adoption Framework document).
+You might think that the adoption of SLO concepts is risky and complicated, but this handbook and the methodology it outlines will clarify what to do to reduce those risks and help you discover a practical and realistic path forward in your SLO adoption journey. For more on the topic of adoption, see the **SLO Adoption Framework** document (to be published soon).
 
-# How to use this document
+
+# How to Use This Document
 
 This document covers the essential aspects of the SLODLC:
 
-* SLO Development Life Cycle - the methodology and how to apply it
-* SLO Knowledge - knowledge artifacts and knowledge management
-* Templates - ready to use templates you can use in real-world situations
-* Pointers to additional resources
 
-Read through the document, familiarize yourself with definitions and practices, then copy the templates and customize them for your own use.
 
-Dedicated templates underpin the SLODLC Handbook. You will find that almost all chapters refer to them. Moreover, along with templates, we provide an extra set of examples. Templates were built with tight alignment with SLODLC process, so all steps are reflected to help you navigate during SLO adoption. Keep in mind those simple rules:
+* The “SLO Development Life Cycle” section describes the methodology and how to apply it.
+* The “SLO Knowledge” section describes knowledge artifacts and knowledge management.
+* The “Templates” section contains ready-to-use templates that you can adapt to real-world situations.
 
-* Use one Discovery, Design, Implement Worksheet per one Service
-* Use one SLI/SLO Specification Template per one SLI with related SLOs
-* Combine all documents into one SLO Repository
+Read through the document, familiarize yourself with the terms and practices it describes, then copy the templates and customize them for your own use.
 
-All SLODLC templates and example ones can be found here: [link]
+Dedicated templates underpin the SLODLC Handbook. You will find references to them throughout. Moreover, along with the templates, we provide a complete set of examples. The templates were built in tight alignment with the SLODLC process, so all the steps you’ll have to navigate during SLO adoption are reflected. Keep in mind these simple rules:
+
+
+
+* Use one Discovery/Design/Implement Worksheet per service. 
+* Use one SLI/SLO Specification Template per SLI with related SLOs.
+* Combine all documents into one SLI/SLO Repository.
+
+All SLODLC templates, together with examples, can be found here: [link].
+
 
 # Contributors
 
+
+
 * SLOconf Slack "go-with-the-slo" workgroup
 
-# An introduction to Service Level Objectives (SLOs)
 
-For a better understanding of Service Level Objectives (SLO’s), we need to define the common terms that set out the fundamentals.. You are probably familiar with general reliability importance and knowledge, and understand how reliability is essential for modern business based on technology enablers, so let’s take each of the basic terms in turn.
+# An Introduction to Service Level Objectives (SLOs)
 
-**Site Reliability Engineering** is a set of reliability principles and practices applied in IT development and operations (a mindset). Think about SRE also like "Smart Resource Engineering": a data-informed approach to delivering what customers want, within the bounds of the imperfections they’re willing to accept. From an organizational and staffing perspective, an SRE is an employee with responsibility for **internal reliability**; meanwhile, a **customer-oriented** reliability engineer would be called a **CRE**. An interesting example of SRE practices might be Chaos Testing. An approach to simulate failure that involves testing scenarios based on various failure events using reliability metrics as predictive indicators.
+You’re probably familiar with reliability in general and why it’s important for modern businesses - but for a better understanding of Service Level Objectives (SLOs), we need to define some common terms that set out the fundamentals.
 
-The **User Journey** is an entire customer/user experience related to activities leading to achieving a particular goal; you may have several services underpinning the Journey. **For example**, a user wants to buy an online newspaper subscription - that's their journey, services related might be account creation service, basket service, payment service.
+**Site Reliability Engineering (SRE)** is a set of reliability principles and practices applied in IT development and operations, a mindset. You can also think of it as Smart Resource Engineering: a data-informed approach to delivering what customers want, within the bounds of the imperfections they’re willing to accept. From an organizational and staffing perspective, a **Site Reliability Engineer** (also abbreviated **SRE**) is an employee with responsibility for **internal reliability**; meanwhile, a **customer-oriented** reliability engineer would be called a **CRE**. An interesting example of SRE practices might be Chaos Engineering, an approach that involves testing scenarios based on various failure events using reliability metrics as predictive indicators.
 
-A **Service** is a dedicated functionality of a dedicated technical component providing a single role within a platform. Referring to the above User Journey example - we can identify three different services, all of which are provided by different technical solutions in a modern microservice architecture.
+A **user journey** is an entire customer/user experience related to activities leading to achieving a particular goal - for example, purchasing an online newspaper subscription. There might be several services underpinning the journey. A **service** is a dedicated functionality of a particular technical component providing a single role within a platform. Referring to the above user journey example, the related services might include an account creation service, shopping cart service, and payment service, each of which would be provided by a different component in a modern microservices architecture.
 
-A **Service Level Agreement (SLA)** is a formal, lawful contract that the service provider declares service reliability under the rigor of penalties - lawful consequences. **For example: **I guarantee that this website will be available 1426 minutes a day (99% uptime).
+A **Service Level Agreement (SLA)** is a formal, legally binding contract between a service provider and its customers defining the level of reliability that they can expect. If the service provider breaks this contract, they can incur penalties. **For example: **I guarantee that this website will be available 1426 minutes a day (99% uptime).
 
-A **Service Level Indicator** **(SLI)** is an indicator of a direct measurement of a service's behavior defined by a formula and implemented as a data query. It is possible to collect two types of SLI metrics. Threshold Metrics - single time series evaluated against a threshold or Ratio Metrics, two-time series to compare; we compare the first query (numerator) vs. the second total query (denominator). **For example:** Website availability formula - the number of minutes up / total minutes in a day.
+A **Service Level Indicator** **(SLI)** is a direct measurement of a service's behavior, defined by a formula and implemented as a data query. It is possible to collect two types of SLI metrics: **threshold metrics**, where a single time series is evaluated against a threshold, and **ratio metrics**, where two time series are compared. With ratio metrics, we compare the results of the first query (the numerator) against the total returned by the second query (the denominator). **For example:** Website availability = number of minutes up / total minutes.
 
-The **Service Level Objective** **(SLO)** is a target (one level higher than the SLI’s) applied to the SLI and considered in the specified time window. The SLO Time Window might be rolling (recent time series in defined length - most of the time number of days) or calendar-aligned (metrics measured on calendar-aligned basis, year, months or days). Our **Error Budget** is 100% of a given metric, minus the defined SLO % Objective level - it shows how long the service will be reliable and not fall under to meet legal consequences. Two Error Budgeting Methods exist - Occurrences (good attempts count against all attempts) and Time Slices (good minutes achieved compared to the total minutes in the time window). SLOs should be higher than SLAs - if you miss your SLO, you will not be subject to the penalty associated with breaching your SLA. **Simple example:** Website availability at 99.9% (one "9" above SLA) is 1438.5 minutes a day; Error Budget (1440 - 1438.5) is 1.5 minutes a day of downtime.
+A **Service Level Objective** **(SLO)** is a target (one level higher than the SLIs) applied to an SLI and considered over a specified time window. The SLO time window might be **rolling** (a period of defined length, typically a certain number of days, that moves as time progresses) or **calendar-aligned** (for metrics measured on a calendar-aligned basis, such as per year, month, or day). The **error budget** is 100% of a given metric, minus the defined SLO target percentage - it allows you to calculate how long the service can fail to meet its objective within the defined time window without adversely affecting customers (that is, the room for error). Two error budgeting methods exist: **Occurrences** (a count of good attempts vs. all attempts) and **Time Slices** (a count of good minutes achieved out of the total minutes in the time window). **For example:** Website availability at 99.9% (one "9" above the SLA) sets an availability target of 1438.5 minutes a day; the error budget is 1.5 minutes a day of downtime (1440 - 1438.5). SLOs are typically stricter than SLAs - if you miss your SLO, you will not be subject to the penalties associated with breaching your SLA, and this will provide a warning that action is required to avoid doing so. 
 
-As a **Composite SLO**, we understand three types of SLOs:
-1. SLO crafted with:
-    1. several SLIs from the same data source,
-    2. or several SLIs from different data sources each.
-2. SLO crafted with several SLOs to create a new Composite Error Budget calculation aggregating each error budget of all the SLOs.
-3. SLO with a combination of variants 1 and 2; For example, a very complex SLO build with 3 different SLOs from different services, each build with different composite SLI configurations of both availability and latency thresholds (even from other data sources) to get an end-to-end view of overall reliability performance.
+**Composite SLOs** can take a few different forms. They include:
 
-<u>From the **SLODLC Handbook** perspective, this topic will not be deeply elaborated on because it is very SLO platform implementation-oriented, not platform-agnostic as SLODLC wants to be.</u>
 
-**DevOps** - employees who are responsible for the development of technical solutions, their maintenance, and operation. They use Agile mindset, methods and techniques with the help of dedicated frameworks and tools for software and infrastructure.
 
-**Observability** - a capability of understanding IT systems measurements and their state using online monitoring, logs, and telemetry.
+1. SLOs crafted with:
+    1. several SLIs from the same data source, or
+    2. several SLIs each from different data sources.
+2. SLOs crafted from two or more existing SLOs to create a new composite error budget calculation aggregating the error budgets of each of those SLOs.
+3. SLOs combining variants 1 and 2. For example, you might have a very complex SLO built from three different SLOs from different services, each built with different composite SLI configurations for availability and latency thresholds (even from other data sources), to get an end-to-end view of overall reliability performance.
 
-**Toil** - in the DevOps world, this is distracting, repetitive, and troublesome manual work that can be automated (scripted, for instance) to give DevOps more time for innovation and focus on essential activities.
+This topic will not be deeply elaborated on in this handbook because it is highly dependent on the SLO platform implementation, whereas the SLODLC methodology aims to be platform-agnostic.
+
+**DevOps engineers** are employees who are responsible for the development, maintenance, and operation of technical solutions. They use the Agile mindset, methods, and techniques with the help of dedicated frameworks and tools for software and infrastructure.
+
+**Observability** refers to the capability of understanding IT systems and their state using online monitoring, logs, and telemetry.
+
+**Toil**, in the DevOps world, is distracting, repetitive, and troublesome manual work that can be automated (scripted, for instance) to give DevOps engineers more time for innovation and essential activities.
 
 **Recommended SLO resources:**
 
-* [Nobl9 blog posts](https://www.nobl9.com/resources), a repository of top SLO industry articles just to name some interesting ones to begin
+
+
+* The [Nobl9 blog](https://www.nobl9.com/resources) is a repository of top SLO industry articles, including (to name just a few interesting ones to begin with):
     * [An Easy Way to Explain SLOs and SLAs to Business Executives](https://www.nobl9.com/resources/an-easy-way-to-explain-slos-slas-to-biz-execs)
     * [How to Explain SRE to Your CEO](https://www.nobl9.com/resources/how-to-explain-sre-to-your-ceo)
     * [Do You Really Need Five Nines?](https://www.nobl9.com/resources/do-you-really-need-five-nines)
-* [SLOconf](https://www.sloconf.com/) - annual SLO conference, a great place for beginners and advanced SLO practitioners 
+* [SLOconf](https://www.sloconf.com/) is the annual online conference dedicated to all things SLO, a great place for beginners and advanced SLO practitioners alike to expand their knowledge.
 
 **Recommended books about SLOs:**
 
-* Implementing Service Level Objectives: A Practical Guide to SLIs, SLOs, and Error Budgets, by Alex Hidalgo, O'Reilly Media [[link](https://www.amazon.com/dp/1492076813/ref=cm_sw_em_r_mt_dp_VY7J5GR3W9T8KNFRW76T)]
-* [https://sre.google/books/](https://sre.google/books/) (three different books about SRE; available online)
 
-# SLO Development Life Cycle (SLODLC)
 
-Why do we need a methodological approach (accelerators, enablers) to SLO adoption? Experience shows that the most challenging parts of SLO adoption are:
+* [Implementing Service Level Objectives: A Practical Guide to SLIs, SLOs, and Error Budgets](https://www.oreilly.com/library/view/implementing-service-level/9781492076803/), by Alex Hidalgo
+* Building Secure & Reliable Systems, The Site Reliability Workbook, and Site Reliability Engineering (the three SRE books from Google, available [online](https://sre.google/books/))
 
-* incorporating SLOs as a part of organizational culture shaping decision making on all levels of the organization,
-* leveraging SLOs above and beyond service reliability to drive balance between go-fast and go-safe, making tradeoffs easier and more transparent,
-* fostering SLO mindset across the organization over time, propagation from Team to Team, from Department to Department.
 
-This is why we decided to introduce the SLODLC; a repeatable methodology which will give you a guide to building the SLO capability in your organization or client’s organization. With the SLODLC you can launch projects that will help automate and improve reliability and observability for you or your clients. It can be easily extended and built into your practices and other consulting activities.
+# The SLO Development Life Cycle (SLODLC)
 
-Software development follows a natural lifecycle, usually referred to as an SDLC. We created the SLODLC to follow a similar concept but applied it to the lifecycle of SLOs instead of software development. This should be familiar to most software development practitioners and give a good framework for how to use SLOs in the organization.
+Why do we need a methodological approach (accelerators, enablers) to SLO adoption? Experience shows that the most challenging aspects of SLO adoption are:
 
-We want the SLODLC to be a living project, evolving over time and incorporating the best industry ideas and new approaches to SLO adoption - it’s a mission called continuous improvement. The SLODLC should be treated as a starting point, and we encourage you to experiment with this methodology - innovate, and extend it, feeding your ideas back into the community. DLC can also stand for Downloadable Content, and we want to share examples and templates that can be used to speed up the adoption of SLOs. As with the SLODLC itself, we invite you to use them freely, adapt to your needs, and share your changes with the SLODLC community.
 
-<img src="/img/slodlc_overview.png" width="100%" alt="diagram" alt="resources-diagram" title="SLODLC"></img>
+
+* Incorporating SLOs into the organizational culture, so they shape decision making at all levels
+* Leveraging SLOs above and beyond service reliability to drive balance between go-fast and go-safe, making tradeoffs easier and more transparent
+* Fostering an SLO mindset across the organization over time, propagating from team to team and from department to department
+
+This is why we decided to introduce the SLODLC, a repeatable methodology which will give you a guide to building the SLO capability in your or your client’s organization. With the SLODLC you can launch projects that will help automate and improve reliability and observability in house or for your clients. It can easily be extended and built into your practices and other consulting activities.
+
+Software development follows a natural life cycle, usually referred to as the SDLC. The SLODLC is a similar concept, but applied to the life cycle of SLOs instead of software. It should therefore feel familiar to most software development practitioners and will provide a good framework for how to use SLOs in the organization.
+
+We want the SLODLC to be a living project, evolving over time and incorporating the best industry ideas and new approaches to SLO adoption - a mission called **continuous improvement**. The SLODLC should be treated as a starting point, and we encourage you to experiment with this methodology: innovate and extend it, and feed your ideas back into the community. DLC can also stand for Downloadable Content, and in this spirit we will share examples and templates that can be used to speed up the adoption of SLOs. As with the SLODLC itself, we invite you to use them freely, adapt them to your needs, and share your changes with the SLODLC community.
+
+SLODLC FULL DIAGRAM PICTURE PLACEHOLDER - add it here!
+
 
 ## Phase 0: Initiate
 
-In order to support an organization in adopting SLO’s, we need to understand why the organization wants to take these steps and what outcomes are desired from this change. Perhaps the organization has suffered a number of incidents or outages which are frustrating customers and hurting its reputation, employees are burning out from an overload of operational toil, or the organization needs to speed up feature delivery but can’t move beyond maintenance mode. Understanding WHY the organization is adopting SLOs will set the course for the adoption journey.
+In order to support an organization in adopting SLOs, you need to understand why the organization wants to take these steps and what outcomes are desired from this change. Perhaps the organization has suffered a number of incidents or outages which are frustrating customers and hurting its reputation, or employees are burning out from an overload of operational toil, or the organization needs to speed up feature delivery but can’t move beyond maintenance mode. Understanding WHY the organization is adopting SLOs will set the course for the adoption journey.
 
-In this phase, we will formalize the scope, goals, and roles within the SLODLC to ensure the successful execution of the overall methodology. To accomplish this, we will **Prepare a Business Case **that lays out the expected investment of resources,  **Identify Stakeholders** and **Define the Desired Outcomes**.
+In this initial phase, you will formalize the scope, goals, and roles within the SLODLC to ensure the successful execution of the overall methodology. To accomplish this, you will **Prepare a Business Case **that lays out the expected investment of resources, **Identify Stakeholders**, and **Define the Desired Outcomes**.
+
 
 ### Prepare Business Case
 
-The first step is to create a short and compelling summary of why you are embarking on this journey. This document should be business and outcome-focused and clearly articulate the required resources, schedule, roles, investments, and desired outcomes for the project. You will be updating this document as you progress through the SLODLC to ensure that all stakeholders are aware of progress and changes in direction as the scope is refined. Ideally, you will have several stakeholders review and approve the document at the outset of the project, and more will join the charge later.
+The first step is to create a short and compelling summary of why you are embarking on this journey. This document should be business- and outcome-focused and clearly articulate the required resources, schedule, roles, investments, and desired outcomes for the project. You will be updating this document as you progress through the SLODLC to ensure that all stakeholders are aware of progress and any changes in direction as the scope is refined. Ideally, you will have several stakeholders review and approve the document at the outset of the project, and more will join the charge later.
 
-**SLODLC Business Case Worksheet **can be found here: [link]
+Lay out the business case in your **SLODLC Business Case Worksheet**.
+
 
 ### Identify Stakeholders
 
-There are 3 primary personas (stakeholder groups) to any SLO: the User, the Business, and the Team. Your SLO adoption journey will need to have people representing each of these stakeholders to ensure a clear balance between their competing but complementary needs. For example, the User may desire fast and perfect software but will be satisfied with something slightly less than perfect. On the other hand, the Business knows that delivering overprovisioned software is expensive and will want to ensure efficient delivery and lower costs. The Team wants to satisfy both users and the business while also maintaining their sanity – they want to work on meaningful tasks, new product innovation, and not repetitive toil that cuts into their personal time.
+There are three primary personas (stakeholder groups) in any SLO: the User, the Business, and the Team. For your SLO adoption journey you will need to have people representing each of these stakeholder groups to ensure a clear balance between their competing but complementary needs. For example, the User may desire fast and perfect software, but will be satisfied with something slightly less than perfect. On the other hand, the Business knows that delivering overprovisioned software is expensive and will want to ensure efficient delivery and lower costs. The Team wants to satisfy both Users and the Business, while also maintaining their sanity – they want to work on meaningful tasks and new product innovation, not repetitive toil that cuts into their personal time.
+
 
 #### The User
 
-Every Stakeholder interacting with a product or service is a User. The User might be a real-life person like a Customer, but also, it might be an interface or another service. Users might be internal stakeholders from your organization (engineers, sales representatives, or even customer support), and they might also be external, as mentioned earlier - your Customers, partners in business, vendors. To capture WHO, use User Stories and Customer Journeys - those valuable assets (explained later in this document in Discovery Phase) provide clear information on what is most important to users, what makes them happy, and how they can become successful. You need to quantify those “happy User moments” and turn them into SLOs.
+Every stakeholder interacting with a product or service is a User. The User might be a real-life person like a Customer, or it might be an interface or another service. Users could be internal stakeholders from your organization (engineers, sales representatives, or even customer support), or they could be external, as mentioned earlier - your customers, partners in business, vendors, etc. To capture the WHO, you will use user stories and customer journeys - these valuable assets (which you will create in the discovery phase) provide clear information on what is most important to users, what makes them happy, and how they can become successful. You need to quantify those “happy user moments” and turn them into SLOs.
+
 
 #### The Business
 
-Stakeholders responsible for the organization's business functions on all levels and domains are called the Business. They can be leaders, function and operational managers, product owners - all of them fulfilling different duties along the hierarchical ladder. According to the strategy, goals, and vision, they drive the organization forward.
+Business stakeholders are any stakeholders responsible for the organization's business functions, at any level and in any domain. They can be leaders, functional and operational managers, product owners, and more, all of them fulfilling different roles along the hierarchical ladder. According to the strategy, goals, and vision, they drive the organization forward.
+
 
 #### The Team
 
-Generally speaking, all Stakeholders working together to satisfy users and grow the business are the Team. You can find them contributing with their dedication and hard work to service or product operation across the organization, starting with technical people, engineers of different specialties responsible for development and operations, SREs (Site Reliability Engineers) accountable for the reliability, and others supporting roles like analysts and testers.
+Generally speaking, all stakeholders working together to satisfy users and grow the business are the Team. You can find them contributing with dedication and hard work to service or product operation across the organization; they include technical people, engineers of different specialties responsible for development and operations, SREs accountable for reliability, and other supporting roles like analysts and testers.
 
-Document all Stakeholders in your **SLODLC Business Case Worksheet** 
+Document all stakeholders in your **SLODLC Business Case Worksheet**. 
+
 
 ### Define Desired Outcomes
 
-Adopting SLOs should not be an end unto themselves; you are trying to solve a particular business/technology challenge that SLOs can help alleviate. Perhaps your goal is to reduce customer churn by providing better reliability, or you need to ramp up feature velocity. You are maybe reducing employee fatigue from on-call rotations. Working backward with the end in mind when setting out on a new journey is best.
+Adopting SLOs should not be an end unto itself; you are trying to solve a particular business/technology challenge. Perhaps your goal is to reduce customer churn by providing better reliability, or you need to ramp up feature velocity, or maybe you want to alleviate employee fatigue from on-call rotations. Working backward with the end purpose in mind when setting out on a new journey is best.
 
-You may also need to address technical debt, re-platform, and cut cloud computing costs. SLO adoption can support these goals, but prioritizing and articulating your reason will add context and increase the organizational will to execute this critical project. It is worth mentioning that during organizational scaling, technical debt might pile up without notice, and SLOs might highlight this issue - helping to address strategic refactoring initiatives.
+ 
 
-There is a section in the Business Case template for Defining Desired Outcomes. Once you have your business case created, stakeholders identified, outcomes defined and thoroughly vetted, you can move on to the next phase of the SLODLC: Discover.
+You may also need to address technical debt, replatform, or cut cloud computing costs. SLO adoption can support these goals, but prioritizing and articulating the underlying reason will add context and increase the organizational will to execute this critical project. It is worth mentioning that during organizational scaling, technical debt might pile up without notice, and SLOs might highlight this issue - helping to address strategic refactoring initiatives.
+
+There is a section in the Business Case Worksheet for Defining Desired Outcomes. Once you have your business case created, stakeholders identified, and outcomes defined and thoroughly vetted, you can move on to the next phase of the SLODLC: Discover.
+
 
 ## Phase 1: Discover
 
-Before you start building SLOs, we need to understand the system and collect information about what matters to your stakeholders. To do this, we will **Prioritize User Journeys **to focus our efforts, **Analyze Dependencies** to see how the chain of reliability fits together and **Observe System Behavior **to ground ourselves in the state of the current environment. This phase will provide context to the following phases of the SLODLC and give a clear direction and prioritization for these efforts.
+Before you start building SLOs, you need to understand the system and collect information about what matters to your stakeholders. **Prioritize User Journeys **to focus your efforts, **Analyze Dependencies** to see how the chain of reliability fits together, and **Observe System Behavior **to ground yourself in the state of the current environment. This phase will provide context for the following phases of the SLODLC and help you decide what to concentrate on.
 
 The **SLODLC Discovery Worksheet** is available here: [link]
 
+
 ### Prioritize User Journeys
 
-If everything is important, nothing is important. To create meaningful SLOs, we need to understand what matters to users. In particular, we want to measure behavior changes – like shopping cart abandonment or user complaints which indicate the reliability or latency of the system is below the expectations of customers in a given scenario.
+If everything is important, nothing is important. To create meaningful SLOs, you need to understand what matters to users. In particular, you’ll want to measure behavior changes, like shopping cart abandonment or user complaints which indicate that the reliability or latency of the system is below the expectations of customers in a given scenario.
 
-User Journeys represent the User's entire experience while interacting with a particular product or service. In most cases, those organizational assets are well documented by different kinds of diagrams mapping interactions. As an alternative, or for better understanding to enrich the whole interaction big picture, it is good to investigate user stories, process flows, and use cases. Being fully aware of how Users interact is a good starting point for prioritization.
+ 
 
-The next step is also based on prioritization, made during group workshops with key stakeholders. The potential list of products or services with eventual metrics should be prioritized to ensure the best outcomes related to the defined goals of SLO adoption. User expectations should be considered to carefully choose the target levels of reliability that each product or service needs. Incorporate business intelligence insights into prioritization to assess unique user needs. Find your own way with prioritization, don't copy what others suggest without criticism - each organization is unique. Critical infrastructure and user-facing products/services - those two areas are great to start with. Put those on top of your prioritized list even with several work ideas of targets.
+User journeys represent the user's entire experience while interacting with a particular product or service. In most cases, these organizational assets are well documented by different kinds of diagrams mapping interactions. As an alternative, or for better understanding to enrich the whole interaction big picture, investigate user stories, process flows, and use cases. Being fully aware of how users interact is a good starting point for prioritization.
 
-Document prioritization in **SLODLC Discovery Worksheet**.
+The next step takes place in group workshops with key stakeholders. The potential list of products or services with eventual metrics should be prioritized to ensure the best outcomes related to the defined goals of SLO adoption. User expectations should be considered to carefully choose the target levels of reliability that each product or service needs. Incorporate business intelligence insights into prioritization to assess unique user needs. Find your own way with prioritization, don't copy what others suggest without criticism - each organization is unique. Critical infrastructure and user-facing products/services are two areas that are great to start with. Put those at the top of your list, regardless of what else is on it.
+
+Document your priorities in the **SLODLC Discovery Worksheet**.
+
 
 ### Analyze Dependencies
 
-To understand the reason for a system's behavior, we need to understand the dependencies that might influence the system and the expectations that are set on that service. The same situation is with User Journeys; those might have cross-impacted, and we need to understand those. Work with your User Journey priority list and conduct three essential iterations.
+To understand the reasons for a system's behavior, we need to understand the dependencies that might influence the system and the expectations that are set on that service. The same is true of user journeys; they might impact one another, and we need to understand those interactions. Work with your user journey priority list and conduct three essential iterations:
 
-* **First iteration** focuses on architectural, technical dependencies and constraints; identify and note them.
-* **Second iteration**, focus on cross User Journeys dependencies and constraints; identify and note them.
-* **The last third interaction** relies on reprioritization - there is a high chance you will identify strong dependencies and constraints that will impact your initial prioritization.
 
-Document prioritization in **SLODLC Discovery Worksheet**.
+
+* The **first iteration** focuses on architectural and technical dependencies and constraints; identify and note them.
+* The **second iteration** focuses on cross–user journey dependencies and constraints; identify and note them.
+* The **third interaction** focuses on reprioritization - there is a high chance that you will identify dependencies and constraints that will impact your initial prioritization, and you’ll need to rethink it.
+
+Document the results of this prioritization step in the **SLODLC Discovery Worksheet**.
+
 
 ### Observe System Behavior
 
-For successful SLO adoption, you must ensure that Monitoring and Observability systems are working and are in good condition (data sources used for SLI queries definition are reliable). Outages history analysis will be valuable to your prioritized User Journey list; it will show additional context from a pain point perspective. Do you know what are the recent outages and their business impact? This is a fundamental question leading to understanding system behavior.
+For successful SLO adoption, you must ensure that you have monitoring and observability systems in place and that they are functioning well (e.g., that the data sources used for SLI query definition are reliable). Analyzing historical outages will provide additional context for your prioritized user journey list, from a pain point perspective. What recent outages have occurred, and what was their business impact? Understanding this will give you fundamental insights into system behavior.
 
-Prepare a list of several outages with a business impact description; write solid case studies for selected outages - this is a perfect moment to think about the completeness of collecting data history of measurements. Ensure you have access to all essential data related and collected history - that means data sources are available to you, you understand data retention policies per data source, and you know what metrics are in place. This information can be captured in the SLODLC Discovery Worksheet and shared with stakeholders. It can also be referenced during the future phases.
+ 
 
-Document your observations in **SLODLC Discovery Worksheet**.
+Document the results of this investigation, and write solid case studies for selected outages. Ensure you have access to all the essential related data and collected history - that is, that the required data sources are available to you, you understand each data source’s data retention policies, and you know what metrics are in place. This information can be captured in the **SLODLC Discovery Worksheet** and shared with stakeholders, and referenced in the future phases. This is also an excellent opportunity to review your data collection and metrics storage practices and identify any gaps.
+
+Document your observations in the **SLODLC Discovery Worksheet**.
+
 
 ## Phase 2: Design
 
-During the Design phase, we concentrate on several dedicated activities related to SLO craftsmanship, starting with **Defining meaningful SLIs**, **Defining Achievable and Aspirational SLOs**, and **Error Budgets**. Consider those activities iterative as any design effort should be tested, verified, and validated according to Key Stakeholder feedback (iterate and improve). Use your SLODLC Discovery Worksheet as input for this phase.
+During the Design phase, you’ll concentrate on several activities related to SLO craftsmanship: this is when you will **Define Meaningful SLIs**, **Define Achievable and Aspirational SLOs**, and **Establish Error Budgets**. Consider those activities iterative, as any design effort should be tested, verified, and validated according to key stakeholder feedback (iterate and improve). Use your **SLODLC Discovery Worksheet** as input for this phase.
 
-Work backward - it's easy to use the wrong metric or focus on the bad workflow. Focus on customer/user needs instead of implementing new solutions right away. Working backward from the customer experience ensures your SLOs are aligned with your business, product, and service operators. Remember that perfect is the enemy of the good - so don't rush for perfection from the beginning of your Design Phase. Collective learning is the best way to learn from mistakes and failures. Start with small steps working with your first new SLIs and SLOs, grow SLO culture along with SLO adoption.
+Work backward - it's easy to use the wrong metric or focus on the wrong workflow. Concentrate on customer/user needs instead of implementing new solutions right away. Working backward from the customer experience ensures your SLOs are aligned with your business, product, and service owners. Remember that perfect is the enemy of good - so don't rush for perfection from the beginning of the Design phase. Collective learning is the best way to learn from mistakes and failures. Start with small steps when working with your first SLIs and SLOs, and grow your SLO culture along with SLO adoption.
 
-The Design Phase has two important dependencies. First, all deliverables will be implemented in the Implementation Phase, and during those activities, you might receive additional feedback, which will lead to another design iteration. Secondly, during the Design Phase, you will work with Periodic Reviews' organizational feedback - reviewing and modifying your SLO targets is normal and expected, so be prepared for it. Remember that The Design Phase is not a “one-off” process. As you implement the SLODLC, you will possibly revisit this phase multiple times as the deliverables are implemented and improved (read more in the Review Periodically chapter). SLODLC requires you to review your SLOs and SLIs at each step and act if changes need to be made, similar to [“Plan, Do, Study, Act” of the Deming Cycle](https://deming.org/explore/pdsa/).
+The Design phase has two important dependencies. First, all deliverables will be implemented in the Implement phase, and during those activities you might receive additional feedback that will lead to another design iteration. Second, during this phase you will receive feedback from the periodic reviews (discussed in “Review Periodically” below). Reviewing and modifying your SLO targets is normal and expected, so be prepared for it. Remember that the Design phase is not a one-off process. As you implement the SLODLC, you will likely revisit this phase multiple times as the deliverables are implemented and improved. The SLODLC requires you to review your SLOs and SLIs at each step and act if changes need to be made, similar to the [“Plan, Do, Study, Act” or Deming Cycle](https://deming.org/explore/pdsa/).
 
 The **SLODLC Design Worksheet** is available here: [link]
 
-### Define Meaningful SLI
 
-Define Meaningful SLI is an activity in which Key Stakeholders collaborate to define desirable, goal-oriented, and testable SLIs, but this requires additional context. Let's explain what meaningfulness is. Generally speaking, meaningfulness is important to stakeholders, particularly Business, Teams, and Users, directly impacting daily duties making work more efficient and less disruptive. Meaningful SLIs should be:
+### Define Meaningful SLIs
 
-* user-centric - critical to user experience and happiness,
-* challenging - missing targets trigger actions,
-* simple - easily understandable,
-* shared - bounding different groups of interest,
-* specific - without ambiguity, self-explaining.
+The first activity of the Design phase involves key stakeholders collaborating to define meaningful, goal-oriented, and testable SLIs. But what does “meaningful” mean? Generally speaking, something that is meaningful is important to stakeholders - particularly the Business, Teams, and Users - and has a direct impact on their daily duties or tasks, making work more efficient and less disruptive. **Meaningful SLIs** should be:
 
-When we're measuring the performance of services, we want to focus on key indicators (Service Level Indicators) that will tell us the most about the user experience and where we are going to draw the line when we need to make potential tradeoffs. It would help if we aimed for SLIs that are helpful in aggregating vital bits of information, SLIs that can tell you about multiple subsystems through a single metric (for example, ratio indicators).
 
-Remember about SLI ownership - all defined SLIs should have an Owner who is accountable for their life cycle and exploitation; in the future, additional SLO ownership might be added to their responsibility (more on ownership is explained in the **SLO Adoption Framework** document).
 
-While defining SLIs and SLOs - 100% should never be a target, 100% is impossible to achieve in a cloud-based world where we are so often dependent on underlying services from third-party providers. A common-sense reliability estimate is that the more reliability we want, the more it costs. As a rule of thumb, each "9" of reliability (from 99.9% to 99.99% reliability) can cost ten times more.
+* User-centric - critical to user experience and happiness
+* Challenging - not setting the bar too low
+* Simple - easily understandable
+* Shared - bounding different groups of interest
+* Specific - without ambiguity, self-explaining
+
+When we're measuring the performance of services, we want to focus on key indicators (Service Level Indicators) that will tell us the most about the user experience and where we are going to draw the line when we need to make potential tradeoffs. It will help if you aim for SLIs that are helpful in aggregating vital bits of information, and that can tell you about multiple subsystems through a single metric (for example, ratio indicators).
+
+Remember that all defined SLIs should have an owner who is accountable for their life cycle and exploitation (you’ll find more on ownership in the **SLO Adoption Framework** document).
+
+While defining SLIs and SLOs, 100% should never be a target. 100% is impossible to achieve in a cloud-based world where we are so often dependent on underlying services from third-party providers. It’s also important to be aware that, in general, the more reliability we want, the more it will cost. As a rule of thumb, each additional "9" of reliability (e.g., going from 99.9% to 99.99%) will cost up to 10 times more.
+
 
 <table>
   <tr>
@@ -246,7 +289,7 @@ While defining SLIs and SLOs - 100% should never be a target, 100% is impossible
    </td>
    <td>5.25 Minutes
    </td>
-   <td>0.86 of a Second
+   <td>0.86 Seconds
    </td>
   </tr>
   <tr>
@@ -254,10 +297,12 @@ While defining SLIs and SLOs - 100% should never be a target, 100% is impossible
    </td>
    <td>31.56 Seconds
    </td>
-   <td>0.0086 of a Second
+   <td>0.0086 Seconds
    </td>
   </tr>
 </table>
+
+
 
 <table>
   <tr>
@@ -318,14 +363,18 @@ While defining SLIs and SLOs - 100% should never be a target, 100% is impossible
   </tr>
 </table>
 
-The four most essential metrics types of customer-facing systems described in SRE literature ([Site Reliability Engineering](https://sre.google/sre-book/monitoring-distributed-systems/)) are:
 
-* Latency - time to service a single request with a clear boundary what time is “good” and what time is “bad”
-* Traffic - requests per time unit, for instance, how many requests per minute the service can handle
-* Errors - failed requests described as a ratio - failed requests to all requests (this could also be  looked at from a different perspective: Success - successful request described as a ratio - good requests to all requests)
-* Saturation - how an element of service is utilized, this might be CPU utilization (for instance, high CPU utilization might trigger scaling activity by your Error Budget policy)
+The four most essential types of metrics to monitor in customer-facing systems (what Google’s  _[Site Reliability Engineering](https://sre.google/sre-book/monitoring-distributed-systems/)_ calls the “four golden signals”) are:
 
-According to SRE Pioneers - Google, another good practice to start defining meaningful metrics is a method called “SLI Menu'' presented in the table below.
+
+
+* **Latency** - the time it takes to service a single request, with a clear boundary between what time is considered “good” and what time is “bad”
+* **Traffic** - the volume of requests per time unit; for instance, how many requests per minute the service can handle
+* **Errors** - failed requests, described as the ratio of failed requests to all requests (this could also be  looked at from the opposite: Success - successful requests, described as the ratio of good requests to all requests)
+* **Saturation** - how fully an element of the service is utilized; for instance, high CPU utilization might trigger scaling
+
+According to the SRE pioneers at Google, another good practice to help you define meaningful metrics is to use the “SLI Menu,'' presented in the table below: this provides guidelines for what aspects of reliability you are likely to want to measure depending on the type of user journey you are considering.
+
 
 <table>
   <tr>
@@ -370,62 +419,71 @@ According to SRE Pioneers - Google, another good practice to start defining mean
   </tr>
 </table>
 
-Document your SLIs in **SLODLC Design Worksheet**. Establish **SLI/SLO Repository**.
 
-### Define Achievable  SLO
+Document your SLIs in the **SLODLC Design Worksheet**. Establish your **SLI/SLO Repository**.
 
-Achievable SLOs set targets at practicable and reasonable levels with full stakeholders' agreement and collaboration. Those SLOs are a good starting point for future benchmarks and references - and for setting Aspirational SLOs (explained in the next chapter). Keep in mind that aiming for too much of a good thing is not a good strategy. Fortunately, you have your Discovery Worksheet with a list of prioritized services. This will help you carefully choose the achievable SLO target levels for each service. 
 
-What are the top 2-3 mission-critical User Journeys? You may opt for an SLO of four or five nines for these services. What services are clearly of lower priority? For example, if you are an e-commerce site, you may prioritize the checkout experience more than simply browsing your catalog, choosing an SLO of five nines for purchasing and four nines for browsing. Here, SLOs of three nines or four nines are likely sufficient. You may end up with a mix of SLO targets ranging from three to five nines.
+### Define Achievable  SLOs
 
-You're keeping customers happy without wasting time and money trying to achieve a level of performance that doesn't deliver commensurate benefits. You've also determined the critical services worth extra investment for automation, redundancy, testing, and other reliability enhancements. That's a wiser approach than arbitrarily setting SLOs of five nines for everything.
+**Achievable SLOs** set targets at practicable and reasonable levels with full stakeholder agreement and collaboration. Those SLOs are a good starting point for future benchmarks and references - and for setting aspirational SLOs (explained in the next section). Keep in mind that aiming for too much of a good thing is not a good strategy. Fortunately, you have your **SLODLC Discovery Worksheet** with its prioritized list of user journeys. This will help you carefully choose achievable SLO targets for each service. 
 
-During your SLO journey, SLO targets will evolve - SLOs will adapt to stakeholder feedback, so don't be surprised with the up and down fluctuation of your SLOs; in the end, those are not written in stone. The Meaningfulness principle applies here, too - keep your Achievable SLOs meaningful. The same goes for testing - each SLO must be testable.
+What are the two or three most mission-critical user journeys? You may opt for an SLO of four or five nines for these services, while setting less stringent objectives for services that are clearly of lower priority? For example, for an e-commerce site you might prioritize the checkout experience over the experience of simply browsing the catalog, choosing an SLO of five nines for purchasing and four nines for browsing. You might end up with a mix of SLO targets ranging from three to five nines.
 
-This is the moment where a reliability roadmap comes in as an outcome of a risk assessment to figure out what's achievable, what's aspirational, what the mitigations could be. During risk assessment - you can define what (service) is critical for customer/user happiness in your organization. You can identify several of those with potential impact and plan mitigation responses (bubbling up quantifiable reliability improvements is a great way to get them funded). For comprehensive risk assessment, use the Risk Analysis Template made by Google; it is a free, public tool based on years-long SRE practices, which can be found here: [https://goo.gl/bnsPj7](https://goo.gl/bnsPj7). In the template, you can find all the necessary definitions and instructions. It is a great exercise material for training purposes or real-life risk assessments; you can address many critical questions such as:
+Your goal should be to keep customers happy without wasting time and money trying to achieve a level of performance that doesn't deliver commensurate benefits, while prioritizing the critical services that merit extra investment for automation, redundancy, testing, and other reliability enhancements. That's a wiser approach than arbitrarily setting SLOs of five nines for everything.
 
-* how risky points target availability/reliability,
-* how will an outage of these customer journeys impact the business,
-* can that impact be quantified,
-* do you have relevant measurements in place for those.
+During your SLO journey, your SLO targets will evolve. Don’t be surprised if they fluctuate up and down in response to stakeholder feedback; they’re not written in stone. In addition to keeping your SLOs meaningful and achievable, you’ll also want to ensure that they are testable. 
+
+At this point it’s a good idea to conduct a risk assessment to help you figure out what's achievable, what's aspirational, and what the mitigations could be. During a risk assessment, you identify the services that are critical for customer/user happiness and success in your organization, determine the potential impact of downtime or problems with those services, and plan mitigation strategies (bubbling up quantifiable reliability improvements is a great way to get them funded). To conduct your risk assessment, you can use the Risk Analysis Template by Google; it’s a free, public tool based on years of SRE experience that is available at [https://goo.gl/bnsPj7](https://goo.gl/bnsPj7). The template includes all the definitions and instructions you’ll need to complete the exercise. It’s a great tool to use for training purposes or real-life risk assessments that will help you address many critical questions, such as:
+
+
+
+* What are the risks that might affect reliability?
+* How will failures in the critical user journeys impact the business?
+* Can that impact be quantified?
+* Are there relevant measurements in place for that?
 
 We recommend this as a group workshop exercise with key stakeholders.
 
-Document your Achievable SLOs in **SLODLC Design Worksheet**. Update **SLI/SLO Repository**.
+Document your achievable SLOs in the **SLODLC Design Worksheet**. Update your **SLI/SLO Repository**.
 
-### Define Aspirational SLO
 
-Aspirational SLOs, on the other hand, represent your SLO ambitions to achieve a certain level of reliability, like putting the bar higher and higher above, driving effort, and reaching new organizational goals. In most cases, Aspirational SLOs are " higher" than Achievable SLOs and represent your aspirations toward the reliability of your future goals. This also helps with benchmarking, enabling you to understand how SLO adoption in your organization progresses over time. Once you've set the Achievable SLO and Aspirational SLO, you'll see a clear gap between today's risk profile and your desire to deliver a more reliable service. The Meaningfulness principle applies here, too - keep your Achievable SLOs meaningful. The same goes for testing - each SLO must be testable.
+### Define Aspirational SLOs
 
-Before we finish defining SLOs, let's elaborate more on testing. It is recommended to test SLO early and often, regardless of which step of SLODLC you are at. Stakeholders should collaborate to test SLOs in real-life scenarios and the environment against expectations, formal assumptions, goals, and meaningfulness. Test SLO Time Window - with one that is more appropriate in a particular case - rolling or calendar-aligned. Test Budgeting Method - which one is better than the other - Occurrences or Time slices. Test thresholds vs. best practices and expectations. Test ratio - good/bad query vs. total query.
+**Aspirational SLOs** represent your ambitions to achieve a certain level of reliability. They set the bar higher than achievable SLOs, driving effort and helping teams reach new organizational goals. Setting aspirational SLOs also helps with benchmarking, enabling you to understand how SLO adoption in your organization progresses over time. Once you've set achievable and aspirational SLOs, you'll see a clear gap between today's risk profile and your desire to deliver a more reliable service. As with achievable SLOs, you'll want to ensure that your aspirational SLOs are meaningful and testable.
 
-Document your Aspirational SLOs in **SLODLC Design Worksheet**. Update **SLI/SLO Repository**.
+This is a good point to talk a little more about testing. It is recommended to test SLOs early and often, regardless of which step of the SLODLC you are at. Stakeholders should collaborate to test SLOs in real-life scenarios against expectations, formal assumptions, and goals, as well as verifying that they are meaningful. Consider which type of time window is more appropriate for each SLO (rolling or calendar-aligned), and which budgeting method makes more sense (Occurrences or Time Slices). Depending on the type of metric you select, test thresholds vs. best practices and expectations, or test the ratio of good/bad to total requests or minutes.
+
+Document your aspirational SLOs in the **SLODLC Design Worksheet**. Update your **SLI/SLO Repository**.
+
 
 ### Establish Error Budgets
 
-We can describe Error Budgets as a conceptual model for understanding acceptable risk in your services. Because of diminishing returns of forced error rate reduction, you should not set your SLOs too high. All that is above the SLO threshold is called a “budget” because your organization can allocate or spend it and track its current balance. During this activity, stakeholders collaborate to find a sweet spot between states - happy and unhappy customers expressed by a budget that can be utilized before a happy customer becomes unhappy.
+You can think of an error budget as a conceptual model for understanding acceptable risk in your services - the SLOs you set effectively establish the level of risk (or error rate) that you consider acceptable. The difference between the SLO target and 100 is your error budget. Because of the diminishing returns of forced error rate reduction, you should not set your SLOs too high. It’s called a “budget” because your organization can allocate or spend it and track its current balance. When the error budget is exhausted, you reach the tipping point where a happy customer becomes unhappy. Therefore, it's important to keep an eye on the burn rate.
 
-Error budgets only have value if stakeholders think of them seriously. That's why there should be a form of consequences. Therefore, an error budget policy is formulated. This policy states what a team must do when they deplete their error budget, how to handle ongoing budget utilization and correlated alerting, escalation thresholds with responding actions.
+Error budgets only have value if stakeholders take them seriously, so there should be consequences when the error budget is burned. This is why it’s important to formulate an **error budget policy**. This policy states what a team must do when they deplete their error budget and how to handle ongoing budget utilization and correlated alerting.
 
-The general remedy is to focus on improving reliability if you are utilizing your error budget, although teams may have created more sophisticated policies with various thresholds and escalation rules. On the opposite, once a service consistently exceeds its SLO (and leaves Error Budget in the bank), the team can take on more change risk or possibly increase the SLO to tighten the tolerance for error. This approach allows the Team to self-police and derive their decisions around reliability.
+The general remedy is to focus on improving reliability if you are utilizing your error budget, although teams may create more sophisticated policies with various thresholds and escalation rules. On the flip side, if a service consistently exceeds its SLO (and leaves an error budget in the bank), the team can take on more change risk or possibly increase the SLO to tighten the tolerance for error. This approach allows the team to self-police and make effective decisions around reliability.
 
-An important operational function of Error Budget is the dynamic burn rate. It considers the following factors: current error rate, remaining error budget, and time until the error budget is refreshed. The goal of the burn rate calculation is to understand if the current burn rate will deplete and how fast. If we stay in this situation for long, we won’t have any error budget left. The Team should set up Error Budget triggers in the attached policies to alert them when this condition persists for more than a short period.
+An important operational function of the error budget is the dynamic burn rate. It considers the following factors: current error rate, remaining error budget, and time until the error budget is refreshed. The goal of the burn rate calculation is to understand if the current burn rate will deplete the available error budget, and how fast. The team should set up error budget triggers in the attached policies to alert them when the burn rate increases for more than a short period.
 
-Document Error Budgets along with your SLOs in **SLODLC Design Worksheet**. Update **SLI/SLO Repository**.
+Document error budgets along with your SLOs in the **SLODLC Design Worksheet**. Update your **SLI/SLO Repository**.
+
 
 ## Phase 3: Implement
 
-Now it’s time to implement your work; make all defined, meaningful SLIs and SLO live. Start with the implementation of SLIs in your monitoring solutions and update old ones if needed. Work with your Design Worksheet - it's all there. You should now **Collect SLIs** to get all the insight from working environments and systems to get them all together. The next step is to **Publish SLO Goals,** and make them visible on the SLO platforms and the whole organization. It’s **SLO Adoption Leader** and **SLO Owner's** responsibility to ensure successful SLO publishing (both roles are explained in the **SLO Adoption Framework** document). Use a defined communication strategy (explained in **SLO Adoption Framework**). **Enforce Error Budget Policy** - defined policies cover all information related to established Error Budgets, how to handle budget utilization and correlated alerting, escalation thresholds with responding actions. This is not to say there can't be exceptions to the rule - time to use them with consequences taken seriously.
+Now it’s time to implement your work; make all defined, meaningful SLIs and SLO live. Start with the implementation of SLIs in your monitoring solutions and update old ones if needed. Work with your Design Worksheet - it's all there. You should now **Collect SLIs** to get all the insight from working environments and systems to get them all together. The next step is to **Publish SLO Goals** and make them visible on the SLO platforms and the whole organization. It’s the **SLO Adoption Leader** and **SLO Owner's** responsibility to ensure successful SLO publishing (both roles are explained in the **SLO Adoption Framework** document). Use a defined communication strategy (explained in **SLO Adoption Framework**). **Enforce Error Budget Policy** - defined policies cover all information related to established error budgets, how to handle budget utilization and correlated alerting, escalation thresholds with responding actions. This is not to say there can't be exceptions to the rule - time to use them with consequences taken seriously.
 
-Document Implementation phase in **SLODLC Implement Worksheet**.
+Document your work during this phase in the **SLODLC Implement Worksheet**.
 
-### Collect SLI
+
+### Collect SLIs
 
 Most of the modern big scale enterprises have not only one monitoring solution but several (large scale enterprises can have even up to 25 different monitoring solutions installed) to boost business awareness. Most of the time, they struggle because of information bias overload - where is one single point of truth? Where to find one big picture? This is a challenge but don't worry - Nobl9 is here to help; more on how can be found here [link].
 
-Monitoring is about collecting metrics from a system to understand what’s going in it. The challenge of monitoring is separating the proper signal (the few, critical things that need attention) from the noise (the many false signals that are at best a distraction). This becomes even more difficult as your system scales. Observe defined and implemented as a query SLIs, what measures are collected, are those meaningful, will those help achieve goals, and can be tested. Ensure that the full history of metrics is collected from the beginning. Observability is similar to monitoring but slightly different. Observability measures how well we can understand the internal system state by solely looking at its outputs. In other words, it is how well we can deduce internal causes by observing external symptoms.
+Monitoring is about collecting metrics from a system to understand what’s going on in it. The challenge of monitoring is separating the proper signal (the few, critical things that need attention) from the noise (the many false signals that are at best a distraction). This becomes even more difficult as your system scales. Observe defined and implemented as a query SLIs, what measures are collected, are those meaningful, will those help achieve goals, and can be tested. Ensure that the full history of metrics is collected from the beginning. Observability is similar to monitoring but slightly different. Observability measures how well we can understand the internal system state by solely looking at its outputs. In other words, it is how well we can deduce internal causes by observing external symptoms.
 
 Document data sources and related information in **SLODLC Implement Worksheet**. Update **SLI/SLO Repository**.
+
 
 ### Publish SLO Goals
 
@@ -435,6 +493,7 @@ SLOs must be published. We have two different topics here to cover. The first on
 
 Document how you will publish each SLOs in **SLODLC Implement Worksheet**. Update **SLI/SLO Repository**.
 
+
 ### Enforce Error Budget Policy
 
 Error budgets are what change metrics into action, but only if they are collectively understood and have consequences for them to be taken seriously. General understanding of policy enforcement should be guaranteed by appointed roles (**SLO Owners** and **SLO Process Owner**;** **roles explained in the **SLO Adoption Framework** document). Policies should be published in the workplace and reviewed during periodic SLO reviews. You might reconsider providing training for stakeholders, especially supervisors and managers, to apply Error Budget policies and how to onboard new hires.
@@ -443,15 +502,18 @@ SLO culture with Error Budgets changes the conversation to balance the tradeoff.
 
 Plan how to enforce policy usage in **SLODLC Implement Worksheet**. Update **SLI/SLO Repository**.
 
+
 ## Phase 4: Operate
 
-Operate Phase in SLODLC represents the ordinary, day-to-day business-as-usual SLO exploitation across the organization. This is when your working SLOs trigger events and you have to **Respond to Error Budget Events & Alerts**. Teams are establishing countermeasures for data bias and degradation to **Ensure SLI Data Cleanliness**. During this stage, you should have already well-established habits of periodic reviews - weekly or monthly according to the necessity and context of your business - those routine activities lead to **Adjust the Targets**. While running SLIs and SLOs, your monitoring systems are collecting a lot of metric data that might be used as an intelligence input - **Gain SLO Insights** as often as possible.
+The Operate phase in the SLODLC represents the ordinary, day-to-day business-as-usual SLO exploitation across the organization. This is when your working SLOs trigger events and you have to **Respond to Error Budget Events & Alerts**. Teams are establishing countermeasures for data bias and degradation to **Ensure SLI Data Cleanliness**. During this stage, you should have already well-established habits of periodic reviews - weekly or monthly according to the necessity and context of your business - those routine activities lead to **Adjust the Targets**. While running SLIs and SLOs, your monitoring systems are collecting a lot of metric data that might be used as an intelligence input - **Gain SLO Insights** as often as possible.
 
 The **SLODLC Review Check Report** is available here: [link]
+
 
 ### Respond to Error Budget Events & Alerts
 
 All potential Error Budget Events should be identified and defined during the Design Phase, noted accordingly in Error Budget Policies. Responses should result in deliberate action - escalation thresholds (priorities) are a great way to automate responses without wasting time. For instance:
+
 
 <table>
   <tr>
@@ -496,17 +558,21 @@ All potential Error Budget Events should be identified and defined during the De
   </tr>
 </table>
 
+
 Alerting is based on monitoring triggers; automated alerts, defined in Error Budget policies. When a particular service has elevated error and alert that puts an SLO at risk (for example,, approaches a critical threshold), stakeholders can be informed by the selected alert method. Alert policies can be defined separately from Error Budgets policies, but each Error Budget policy should have an adequate alert policy. Different alert and event policies might use different communication channels to alert in notification engines or tools (for example, Jira, PagerDuty, Slack). Alerts improve awareness of your system and enable you to do better-contributing factor analysis when something goes wrong - as an input to the Incident Management Process that is in place, or input to postmortems.
 
 Be careful - alerts may interrupt with unnecessary noise in the organization, leading to distraction and more errors. Smart SLO and Error Budgets design and implementation will shift this process from noisy alerting to incident prevention.
 
+
 ### Ensure SLI Data Cleanliness
 
-Data quality is essential. You should think about SLI data (query data) as a critical asset that maintains reliability. No matter what information you use and from what data source, even the most trusted one. Data Cleanliness can be achieved by a consistent, correct, and usable data collection process. Clean data has many advantages - it removes significant errors and inconsistencies and makes workflow more efficient as you can quickly get what you need from the correct available data. Fewer mistakes mean happier customers/users and less frustrated employees. Monitor for data errors and check the correctness of the data, standardize your data collection and data cleaning process, remove duplicated data, review your data manually from time to time (examining statistical samples for instance). Beware - most data cleaning can be done with dedicated tools, but some data cleaning requires manual work, which might need an extra organizational workforce; this task might be overwhelming.
+Data quality is essential. You should think about SLI data (query data) as a critical asset that maintains reliability. No matter what information you use and from what data source, even the most trusted one. Data cleanliness can be achieved by a consistent, correct, and usable data collection process. Clean data has many advantages - it removes significant errors and inconsistencies and makes workflow more efficient as you can quickly get what you need from the correct available data. Fewer mistakes mean happier customers/users and less frustrated employees. Monitor for data errors and check the correctness of the data, standardize your data collection and data cleaning process, remove duplicated data, review your data manually from time to time (examining statistical samples for instance). Beware - most data cleaning can be done with dedicated tools, but some data cleaning requires manual work, which might need an extra organizational workforce; this task might be overwhelming.
+
 
 ### Adjust the Targets
 
 Daily work with SLOs will generate feedback. We have a feedback loop from Operate Phase to Design and Implement Phases (both in iterative relation). You'll get operational feedback that will impact SLO in various ways - this is okay, which means SLOs are doing their job. One common pitfall is to set aspirational SLOs rather than achievable SLOs. For example, if you've never measured before, you may aspire to have three or four nines for a particular SLO. Then, when you see the real-life data, you may find that only two-and-half or three nines are achievable in the current state. Adjust the target! Now you have SLO that every stakeholder provided feedback on; SLO that has been adjusted, and proven correct with actual data. This is also the time to check if all SLI and SLO preliminary assumptions are still valid. Work with your live SLIs to check for anomalies or repeatable spikes. Investigate those; it might lead you to discover some new constraints or dependencies - it is a quite popular event that a newly-introduced SLI will expose valuable information that was not even considered while defining that SLI. This is a way to continuous SLO improvement. Learn and adapt - iterate and improve.
+
 
 ### Gain SLO Insights
 
@@ -514,21 +580,26 @@ SLO Insights will help you make data-driven decisions. SLO insights refer to the
 
 Reports and dashboards are common ways to present data - insights provided by SLOs might enrich business intelligence and organizational wisdom on many levels - operational, economic, and leadership, to name a few. Remember to add appropriate activities to the SLO process to gather insights and review them. You can define and describe your SLO process by using SLODLC Process Template. More on the process topic in SLO Process Chapter.
 
+
 ## Review Periodically
 
-Reviews make Design and Operate phases interact iteratively. This activity should be your long-lasting habit. Reviews are about stakeholders collaborating in an iterative way to refine established SLOs; all input is welcome - related to SLIs, SLOs, Error  Budgets, happiness, and overall SLO process. SLOs are not a project, not a system - SLOs are constantly evolving entities - evolving with your services and customer/user happiness. You may believe that you have the best SLO ever, but valuable feedback might refine it during the following periodic SLO review (for example, are SLI/SLO initial assumptions still valid).
+Reviews make the Design and Operate phases interact iteratively. This activity should be your long-lasting habit. Reviews are about stakeholders collaborating in an iterative way to refine established SLOs; all input is welcome - related to SLIs, SLOs, Error  Budgets, happiness, and overall SLO process. SLOs are not a project, not a system - SLOs are constantly evolving entities - evolving with your services and customer/user happiness. You may believe that you have the best SLO ever, but valuable feedback might refine it during the following periodic SLO review (for example, are SLI/SLO initial assumptions still valid).
 
 Reviews should be conducted at a weekly or monthly interval. You may experiment with this cadency at the beginning of SLO adoption and find the best way for your organization. During Reviews, use SLODLC Review Check Report; this template will provide a useful set of checkpoints ensuring the completeness of your review meeting.
 
 One of the most intriguing SLO challenges you may find at the beginning of your SLO adoption is how your service scaling may affect your SLOs. At first sight, this topic might look a bit overwhelming. One might think: "Ohh, we need a dedicated SLO Scaling Policy!". It’s not true - we have a better solution. First, we must understand that with the beauty of math, with 99.5% objective SLO, it will still be 99.5% if you're talking about 100 requests or 10000 requests regarding your scaled-up service. Second, you want to re-address and iterate on your objectives as time passes - regarding scaling events. Your service, during its life cycle, might experience different utilization changes like an increase (more requests, more failed requests, slower responses), decrease (less and less requests, less traffic in general), or functional (functionality changes). So, with SLOs, don't assume service scaling as something unique that might impact your SLOs. Moving towards a solution -a process approach to guide organizations to create better SLOs. **The SLODLC with built-in feedback loops and periodic reviews comes with help.** Of course, scaling should trigger a reflection on SLOs. Your organization will eventually experience such changes - plan ahead and add explicit scaling to your SLODLC documentation as a driver for future SLO adaptation.
 
+ 
+
 The **SLODLC Review Check Report** is available here: [link]
+
 
 ## Align with Service & Software and Business Development Life Cycles
 
 SLO adoption and later, **SLO Process** (explained in the **SLO Adoption Framework** document)  - those are not operating in an empty space. They operate in parallel with other processes, especially with close relation to the Service & Software Development Life Cycles. Service Development Life Cycle is an ongoing parallel process - SLODLC is strictly related to products and services (and related User Journeys), so it's wise to be familiar with those services, their life cycles, and most important - interact with involved stakeholders. Knowing when a particular service will retire will also signal the end of some SLOs on your radar, letting the SRE workforce be assigned to the new place. On the other hand, the Software Development Life Cycle will be impacted by SLODLC significantly. SLODLC is forcing a reliability focus from the beginning of the SDLC; forcing reliability into Architecture, Design, Test-Driven Development, Test Automation, Development - shifting reliability towards the "left"; towards the early stages of the Software Development Life Cycle.
 
 From the business alignment perspective - monitor closely for emerging new business ideas. In most cases, the ideas will be related to new product development. Some new concepts or ideas might be already during prototyping, or maybe someone is developing new marketing strategies - look for those, stay alert. Listen to business stakeholders when discussing customer feedback and new ideas screening to fulfill market needs. Don't wait till the commercialization stage - start with SLOs as early as possible because the first impression and time to market momentum might be lost. A good practice is to be familiar with the business work pipeline - watch product backlogs and be up to date with incoming planned Scrum Sprints. Most importantly, make SLOs visible to businesses, attract business to the topic, and show them the potential benefits of using SLOs. 
+
 
 ## Listen and Engage Users and Stakeholders
 
@@ -538,6 +609,7 @@ Different groups of interest should know how each other positions the SLO adopti
 
 Securing transparency and clear communication will attract followers (bigger and bigger buy-in). Understand what people's concerns are and address them. Build engagement by allowing full participation of all stakeholders interested in SLOs. Invite them to periodic review meetings and establish a communication channel; let them join SLO formal or informal communities if any are established at a given time. While listening and engaging, focus on good relations and flawless interactions; ensure clear communication, without double standards and ambiguity; build trust and honesty, ask questions and provide feedback.
 
+
 ## Share Learnings from SLO Journey to Align Practices and Standards
 
 Let's start with the organization's learning culture - one of the most important values ​​is supporting employees and encouraging them to acquire knowledge and experience - so crucial with SLO adoption as it might be a new concept for some. This culture requires no fear of asking stupid questions - in our case, about SLOs and general reliability. Understanding and willingness to provide advice in any challenging situation is an excellent element for building trust and good communication. The willingness to learn is not entirely enough to create the right way to share SLO learnings; it's also essential to develop a sense of urgency, for example, by explicit demonstration of potentially lost SLO benefits.
@@ -546,39 +618,97 @@ Incorporate your SLO practices into a standardized way of work to guide others i
 
 Celebrate SLO success cases and spread the word about them! Publish your related work frequently. Exchange, share all relevant SLO information, and share valuable resources with the whole organization, internal and external communities. Don't build SLOs, and don't work with them in isolation.
 
+
 # SLO Knowledge
 
-Despite which adoption path you will use and start with (paths are explained in the **SLO Adoption Framework** document), SLO knowledge management will be a part of your whole SLO adoption process. For best outcomes, you have to be familiar with the basic idea of the knowledge management process. Focus on four universal process steps: 
+Whatever adoption path you follow (paths are explained in the **SLO Adoption Framework** document), SLO knowledge management will be a part of your SLO adoption process. To achieve the best outcomes, you have to be familiar with the basic knowledge management process. Focus on four universal steps: 
 
-* capture all SLO knowledge artifacts, 
-* define how you want to organize those artifacts and how to store them, 
-* limit access, distribution, and publishing rules make practical use of knowledge and encourage stakeholders to learn and share the SLO experience.
 
-The table of SLO knowledge artifacts is mapped to the **SLO Maturity Model** (explained in the **SLO Adoption Framework** document). It means that you should have solidly established artifacts on each maturity level as in the following table: 
 
-| SLO Maturity Level | Knowledge Artifacts |
-|--------------------|---------------------|
-| Maturity Level 1 - Monitor and React | * SLI/SLO Documentation - comprehensive SLO documentation repository, documents, and links; a combination of SLODLC templates|
-|                 | * SLI/SLO Repository - one place for all SLIs and SLOs defined and implemented connected to SLO metadata like feedback, satisfaction surveys, visualized history data, and all related information; a combination of SLODLC templates|
-|                 | * SLO Use Cases repository - a collection of all SLOs defined in the organization with case description for general understanding of all stakeholders|
-|                 | * SLI/SLO Templates - ready to use templates| 
-|-----------------|------------------------|
-| Maturity Level 2 - SLO Concepts | * Library of resources - organizational SLO/SRE library with various resources related and available to employees; for example digital collection of books and other materials |
-|                                 | * Case Studies repository - as an extension for SLO Use Cases repository with industry examples and references |
-|                                 | * Dashboards - combine your organization SLOs into present dashboards and/or make new dedicated; make them accessible and visible |
-|                                 | * Discussion board/forum - in most cases - an online place for SLO internal discussions |
-|                                 | * FAQs - all frequently asked questions related to SLOs in one place |
-|                                 | * Meetups - different meetings in the different formulas, those might be internal or external, one time meetings or recurring SLO community meetings |
-|                                 | * SLO Reports - dedicated repository of pre-prepared ones or dedicated solution for reports ad hoc generation |
-|-----------------|------------------------|
-| Maturity Level 3 Full SLO Adoption | * Blog posts - internal - organization portal and/or external on the website or in social media |
-|                                    | * Conferences - your SLO practitioners might attend as speakers or you can establish a closed internal conference for your organization |
-|                                    | * Newsletters - every successful organizational change needs outbound communication; newsletters might be used in various conditions and situations |
-|                                    | * Postmortems/Runbooks SLO References - those artifacts are vital for successful Incident and Problem Management enriching postmortems and runbooks for extra SLO insights |
-|                                    | * Social media - your organization might be an active social media participant and share knowledge freely, it's a good idea to select one social media platform and manage outbound social media communication in SLO topic to exchange experience |
-|                                    | * Benchmark repository - all information related to SLO experience in the industries |
-|                                    | * Big scale reviews - from time to time, put SLOs in the center of a town hall or other big organization gathering |
-|                                    | * Established SLO Process repository with tools for continuous improvements, historical and statistical data, recommendations for improvement |
+* Capture all SLO knowledge artifacts. 
+* Define how you want to organize those artifacts and how to store them. 
+* Limit access, distribution, and publishing rules. 
+* Make practical use of knowledge and encourage stakeholders to learn and share the SLO experience.
+
+The table of SLO knowledge artifacts presented here is mapped to the **SLO Maturity Model** (explained in the **SLO Adoption Framework** document). It details the solidly established artifacts that you should have at each maturity level.
+
+
+<table>
+  <tr>
+   <td><strong>SLO Maturity Level</strong>
+   </td>
+   <td><strong>Knowledge Artifacts</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Maturity Level 1 \
+Monitor and React</strong>
+   </td>
+   <td>
+<ul>
+
+<li>SLI/SLO Documentation - comprehensive SLO documentation repository, documents, and links; a combination of SLODLC templates
+
+<li>SLI/SLO Repository - one place for all SLIs and SLOs defined and implemented connected to SLO metadata like feedback, satisfaction surveys, visualized history data, and all related information; a combination of SLODLC templates
+
+<li>SLO Use Cases repository - a collection of all SLOs defined in the organization with case description for general understanding of all stakeholders
+
+<li>SLI/SLO Templates - ready to use templates
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Maturity Level 2 \
+SLO Concepts</strong>
+   </td>
+   <td>
+<ul>
+
+<li>Library of resources - organizational SLO/SRE library with various resources related and available to employees; for example digital collection of books and other materials
+
+<li>Case Studies repository - as an extension for SLO Use Cases repository with industry examples and references
+
+<li>Dashboards - combine your organization SLOs into present dashboards and/or make new dedicated; make them accessible and visible
+
+<li>Discussion board/forum - in most cases - an online place for SLO internal discussions
+
+<li>FAQs - all frequently asked questions related to SLOs in one place
+
+<li>Meetups - different meetings in the different formulas, those might be internal or external, one time meetings or recurring SLO community meetings
+
+<li>SLO Reports - dedicated repository of pre-prepared ones or dedicated solution for reports ad hoc generation
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Maturity Level 3 \
+Full SLO Adoption</strong>
+   </td>
+   <td>
+<ul>
+
+<li>Blog posts - internal - organization portal and/or external on the website or in social media
+
+<li>Conferences - your SLO practitioners might attend as speakers or you can establish a closed internal conference for your organization
+
+<li>Newsletters - every successful organizational change needs outbound communication; newsletters might be used in various conditions and situations
+
+<li>Postmortems/Runbooks SLO References - those artifacts are vital for successful Incident and Problem Management enriching postmortems and runbooks for extra SLO insights
+
+<li>Social media - your organization might be an active social media participant and share knowledge freely, it's a good idea to select one social media platform and manage outbound social media communication in SLO topic to exchange experience
+
+<li>Benchmark repository - all information related to SLO experience in the industries
+
+<li>Big scale reviews - from time to time, put SLOs in the center of a town hall or other big organization gathering
+
+<li>Established SLO Process repository with tools for continuous improvements, historical and statistical data, recommendations for improvement
+</li>
+</ul>
+   </td>
+  </tr>
+</table>
 
 
 You may wish to establish the **SLO Training Programs** or more advanced **Workshops** or **Bootcamps**. Doing so builds strong motivation for the target audience to learn the topic by highlighting SLO benefits, opportunities, and success stories. During any training program, monitor participant feedback, what are the reactions, and what is the general interest. Conduct a survey after the training. Evaluate the whole program according to the gathered feedback. There are several practices for developing a successful SLO training program we can share, as Nobl9 has a long history of SLO Bootcamps. Let's start with a qualified, professional SLO trainer, a role responsible for training program execution outcomes - an **SLO Champion** (also known as Advocate or Coach). For this role, you may train an internal trainer or hire an industry consultant with training experience.
@@ -595,6 +725,7 @@ SLO training programs might need dedicated customization based on assessment res
 
 **SLO Communities of Practice** are organized groups with a shared interest in the SLO area. Participants collaborate to learn, teach, and exchange knowledge and experience. This is another level of professional networking; participation is motivated by volunteering, by the will to share with the community. Communities of Practice might be role oriented - connecting employees with the same role to help them grow within the role; cross-organizational - connecting employees from different units and with different roles, collectively solving complex organizational problems. As an **SLO Adoption Leader**, establishing the first Community of Practice should be your vital goal. Grow it and foster it as the SLO adoption progresses along the path (explained in the **SLO Adoption Framework** document).
 
+
 # Final Thoughts
 
 The Good SLO, the Bad SLO, and the Ugly SLO - yes, you can find all of those SLOs all-around your organization. Let's start with the Good SLO - the Team fully understands its importance and can react swiftly to Error Budget changes, accelerate development, experiment, and fail in a friendly, safe environment. SLO feedback is used to improve and grow, and root causes of incidents and problems are identified and addressed quicker. The Good SLO is a meaningful SLO - customer/user happiness is at the center of attention.
@@ -607,7 +738,11 @@ One more thing for the end - don't focus on default SLOs - look at your products
 
 This is the end of SLODLC - more about SLO adoptions in the **SLO Adoption Framework** document. We hope you enjoy the SLO ride with us! Make good use of all you learned from this handbook. We wish you all the best during your own SLO journey!
 
+
 # Templates
+
+
+
 1. SLODLC Business Case Worksheet
 2. SLODLC Discovery Worksheet
 3. SLODLC Design Worksheet
