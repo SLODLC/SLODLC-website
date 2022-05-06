@@ -119,7 +119,7 @@ Software development follows a natural life cycle, usually referred to as the SD
 
 We want the SLODLC to be a living project, evolving over time and incorporating the best industry ideas and new approaches to SLO adoption - a mission called **continuous improvement**. The SLODLC should be treated as a starting point, and we encourage you to experiment with this methodology: innovate and extend it, and feed your ideas back into the community. DLC can also stand for Downloadable Content, and in this spirit we will share examples and templates that can be used to speed up the adoption of SLOs. As with the SLODLC itself, we invite you to use them freely, adapt them to your needs, and share your changes with the SLODLC community.
 
-### SLODLC DIAGRAM
+### SLODLC Diagram
 <img src="/img/slodlc_overview.png" width="100%" alt="diagram" alt="resources-diagram" title="SLODLC"></img>
 
 
@@ -479,7 +479,7 @@ Document your work during this phase in the **SLODLC Implement Worksheet**.
 
 ### Collect SLIs
 
-Most of the modern big scale enterprises have not only one monitoring solution but several (large scale enterprises can have even up to 25 different monitoring solutions installed) to boost business awareness. Most of the time, they struggle because of information bias overload - where is one single point of truth? Where to find one big picture? This is a challenge but don't worry - Nobl9 is here to help; more on how can be found here [link].
+Most of the modern big scale enterprises have not only one monitoring solution but several (large scale enterprises can have even up to 25 different monitoring solutions installed) to boost business awareness. Most of the time, they struggle because of information bias overload - where is one single point of truth? Where to find one big picture?
 
 Monitoring is about collecting metrics from a system to understand what’s going on in it. The challenge of monitoring is separating the proper signal (the few, critical things that need attention) from the noise (the many false signals that are at best a distraction). This becomes even more difficult as your system scales. Observe defined and implemented as a query SLIs, what measures are collected, are those meaningful, will those help achieve goals, and can be tested. Ensure that the full history of metrics is collected from the beginning. Observability is similar to monitoring but slightly different. Observability measures how well we can understand the internal system state by solely looking at its outputs. In other words, it is how well we can deduce internal causes by observing external symptoms.
 
