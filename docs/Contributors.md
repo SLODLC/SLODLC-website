@@ -12,8 +12,27 @@ keywords:
 # Contributors
 
 ## Founding Members
-- Kit Merker - Nobl9
-- Sal Furino - Nobl9
+Founding contributors:
+- Kit Merker, Nobl9
+- Tomasz Boinski
+- Sal Furino, Nobl9
+- Casey OMara, Oracle
+- Christopher Flaesch, Realogic Solutions
+- Gwen De Leon, IAG
+- Jan Ritter, Trustedshops
+- Jason Meltzer, Contino
+- Jason Greenwell, Ford
+- Joseph Galley, Accenture
+- Mason Richins, Etsy
+- Prabhu Shankar Gopalakrishnan, Virtusa
+- Stephen Townshend, IAG
 
-## Sustaining Contributors
-- sally sample - company
+##Contributors:
+- Alex Nauda, Nobl9
+- Devin ODaniel, Etsy
+- Corey Samuels, Etsy
+- Marco Torre, Accenture
+- Matthew Macdonald-Wallace, Contino
+- Zachary Nickens, Outsystems
+
+
