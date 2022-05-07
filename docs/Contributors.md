@@ -12,7 +12,6 @@ keywords:
 # Contributors
 
 ## Founding Members
-Founding contributors:
 - Kit Merker, Nobl9
 - Tomasz Boinski
 - Sal Furino, Nobl9
@@ -27,7 +26,7 @@ Founding contributors:
 - Prabhu Shankar Gopalakrishnan, Virtusa
 - Stephen Townshend, IAG
 
-##Contributors:
+## Contributors:
 - Alex Nauda, Nobl9
 - Devin ODaniel, Etsy
 - Corey Samuels, Etsy
