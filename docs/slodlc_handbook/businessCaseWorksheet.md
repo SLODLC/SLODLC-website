@@ -1,17 +1,17 @@
 ---
-id: template1
-title: template1
-sidebar_label: Template 1
+id: businesscaseWorksheet
+title: Business Case Worksheet
+sidebar_label: Business Case Worksheet
 sidebar_position: 21
-description: Template 1
+description: Business Case Worksheet
 keywords:
   - resources
   - slo
   - slodlc
-  - template 1
+  - business case
 ---
 
-# EXAMPLE of SLODLC Business Case Worksheet
+# SLODLC Business Case Worksheet
 
 **SLODLC Adoption:**
 
