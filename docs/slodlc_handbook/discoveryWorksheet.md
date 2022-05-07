@@ -1,14 +1,15 @@
 ---
-id: template2
-title: template2
-sidebar_label: Template 2
+id: discoveryWorksheet
+title: Discovery Worksheet
+sidebar_label: Discovery Worksheet
 sidebar_position: 22
-description: Template 2
+description: Discovery Worksheet
 keywords:
   - resources
   - slo
   - slodlc
-  - template 2
+  - discovery
+  - worksheet
 ---
 # SLODLC Discovery Worksheet
 

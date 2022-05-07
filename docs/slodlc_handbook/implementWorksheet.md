@@ -1,14 +1,16 @@
 ---
-id: template5
-title: template5
-sidebar_label: Template 5
+id: implementWorksheet
+title: Implement Worksheet
+sidebar_label: Implementation Worksheet
 sidebar_position: 25
-description: Template 5
+description: Implementation Worksheet
 keywords:
   - resources
   - slo
   - slodlc
-  - template 5
+  - implement
+  - implementation
+  - worksheet
 ---
 
 # SLODLC Implement Worksheet

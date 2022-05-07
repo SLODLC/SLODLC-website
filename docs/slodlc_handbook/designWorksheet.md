@@ -1,14 +1,15 @@
 ---
-id: template4
-title: template4
-sidebar_label: Template 4
+id: designWorksheet
+title: Design Worksheet
+sidebar_label: Design Worksheet
 sidebar_position: 24
-description: Template 4
+description: Design worksheet
 keywords:
   - resources
   - slo
   - slodlc
-  - template 4
+  - design
+  - worksheet
 ---
 
 # SLODLC Design Worksheet

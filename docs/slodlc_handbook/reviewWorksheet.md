@@ -1,14 +1,15 @@
 ---
-id: template6
-title: template6
-sidebar_label: Template 6
+id: reviewWorksheet
+title: Review Worksheet
+sidebar_label: Review Worksheet
 sidebar_position: 26
-description: Template 6
+description: Review Worksheet
 keywords:
   - resources
   - slo
   - slodlc
-  - template 6
+  - review
+  - worksheet
 ---
 
 # SLODLC Review Check Report
