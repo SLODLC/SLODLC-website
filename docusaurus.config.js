@@ -136,7 +136,7 @@ const config = {
             items: [
               {
                 label: 'SLODLC Home',
-                href: 'https://slodl.com/',
+                href: 'https://slodlc.com/',
               },
               {
                 label: 'Slack',
@@ -155,12 +155,8 @@ const config = {
           {
             items: [
               {
-                label: 'Contact Us',
-                href: 'https://nobl9.com/about/#contact',
-              },
-              {
                 label: 'Terms of Use',
-                href: 'https://slodlc.com/Release_Notes/terms',
+                href: 'Release_Notes/terms.md',
               },
             ],
           },
