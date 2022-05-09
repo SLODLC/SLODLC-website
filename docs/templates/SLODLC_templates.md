@@ -17,5 +17,5 @@ keywords:
 * [Discovery Worksheet](discoveryWorksheet.md)
 * [Implementation Worksheet](implementWorksheet.md)
 * [Review Worksheet](reviewWorksheet.md)
-* [SLI / SLO Worksheet](sliSloSpecTemplate.md)
+* [SLI / SLO Template](sliSloSpecTemplate.md)
 
