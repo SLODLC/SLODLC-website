@@ -93,7 +93,7 @@ Software development follows a natural life cycle, usually referred to as the SD
 
 We want the SLODLC to be a living project, evolving over time and incorporating the best industry ideas and new approaches to SLO adoption - a mission called **continuous improvement**. The SLODLC should be treated as a starting point, and we encourage you to experiment with this methodology: innovate and extend it, and feed your ideas back into the community. DLC can also stand for Downloadable Content, and in this spirit we will share examples and templates that can be used to speed up the adoption of SLOs. As with the SLODLC itself, we invite you to use them freely, adapt them to your needs, and share your changes with the SLODLC community.
 
-SLODLC FULL DIAGRAM PICTURE PLACEHOLDER - add it here!
+<img src="/img/slodlc_overview.png" width="100%" alt="diagram" alt="resources-diagram" title="SLODLC"></img>
 
 ## Phase 0: Initiate
 
