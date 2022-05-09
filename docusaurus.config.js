@@ -156,7 +156,7 @@ const config = {
             items: [
               {
                 label: 'Terms of Use',
-                href: 'Release_Notes/terms.md',
+                href: 'Release_Notes/terms',
               },
             ],
           },
