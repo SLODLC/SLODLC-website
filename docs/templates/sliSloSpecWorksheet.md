@@ -1,16 +1,16 @@
 ---
-id: sliSloSpecWorksheet
-title: SLI SLO Specification Worksheet
-sidebar_label: "SLI/SLO Specification Worksheet"
+id: sliSloSpecTemplate
+title: SLI SLO Specification Template
+sidebar_label: "SLI/SLO Specification Template"
 sidebar_position: 23
-description: "SLI/SLO Specification Worksheet"
+description: "SLI/SLO Specification Template"
 keywords:
   - resources
   - slo
   - slodlc
   - sli
   - specification
-  - worksheet
+  - template
 ---
 
 # SLI/SLO Specification Template
