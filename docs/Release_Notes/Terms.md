@@ -2,7 +2,7 @@
 id: terms
 title: Terms of Service
 sidebar_label: Terms of Service
-sidebar_position: 10
+sidebar_position: 30
 toc_min_heading_level: 2
 toc_max_heading_level: 5
 description: SLODLC Terms of Service
