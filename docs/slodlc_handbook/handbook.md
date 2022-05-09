@@ -34,7 +34,7 @@ Dedicated templates underpin the SLODLC Handbook. You will find references to th
 * Use one SLI/SLO Specification Template per SLI with related SLOs.
 * Combine all documents into one SLI/SLO Repository.
 
-All SLODLC templates, together with examples, can be found here: [link].
+All SLODLC templates, together with examples, can be found [here](templates.md).
 
 ## An Introduction to Service Level Objectives (SLOs)
 
