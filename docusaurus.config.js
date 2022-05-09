@@ -143,17 +143,12 @@ const config = {
           {
             items: [
               {
-<<<<<<< HEAD
-                label: 'SLODLC Home',
-                href: 'https://slodlc.com/',
-=======
                 label: 'Nobl9 Home',
                 href: 'https://nobl9.com/',
               },
               {
                 label: 'Tutorials',
                 href: 'https://www.nobl9.com/explore/learning-center',
->>>>>>> parent of db085a0 (updated footer information)
               },
               {
                 label: 'Tips & Tricks',
@@ -172,10 +167,6 @@ const config = {
           {
             items: [
               {
-<<<<<<< HEAD
-                label: 'Terms of Use',
-                href: 'Release_Notes/terms',
-=======
                 label: 'Contact Us',
                 href: 'https://nobl9.com/about/#contact',
               },
@@ -186,7 +177,6 @@ const config = {
               {
                 label: 'Terms of Use',
                 href: 'https://nobl9.com/terms-of-use/',
->>>>>>> parent of db085a0 (updated footer information)
               },
             ],
           },
