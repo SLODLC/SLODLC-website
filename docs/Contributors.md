@@ -2,7 +2,7 @@
 id: contributors
 title: Contributors
 sidebar_label: Contributors
-sidebar_position: 12
+sidebar_position: 4
 toc_min_heading_level: 2
 toc_max_heading_level: 5
 description: A listing of SLODLC contributors
