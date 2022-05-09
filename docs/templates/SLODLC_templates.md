@@ -10,7 +10,12 @@ keywords:
   - slodlc
   - templates
 ---
-# TEMPLATES
+# Templates
 
-content goes here
+[Business Case worksheet](businessCaseWorksheet.md)
+[Design Worksheet](designWorksheet.md)
+[Discovery Worksheet](discoveryWorksheet.md)
+[Implementation Worksheet](implementWorksheet.md)
+[Review Worksheet](reviewWorksheet.md)
+[SLI / SLO Worksheet](sliSloSpecWorksheet.md)
 
