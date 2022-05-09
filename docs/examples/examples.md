@@ -1,9 +1,7 @@
 ---
-id: SLODLC examples
-title: SLODLC Example Templates
-sidebar_position: 1
+id: examples
+title: Example Templates
 pagination_label: SLODLC Example Templates
-custom_edit_url:
 description: SLODLC Example Templates
 keywords:
   - examples
@@ -11,5 +9,6 @@ keywords:
 ---
 
 # Examples
+
 these are examples
 
