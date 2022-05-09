@@ -1,5 +1,5 @@
 ---
-id: templates
+id: SLODLC templates
 title: SLO Development Lifecycle Templates
 sidebar_label: Templates
 sidebar_position: 15
