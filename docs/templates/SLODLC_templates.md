@@ -13,9 +13,9 @@ keywords:
 # Templates
 
 * [Business Case worksheet](businessCaseWorksheet.md)
-* [Design Worksheet](designWorksheet.md)
 * [Discovery Worksheet](discoveryWorksheet.md)
+* [Design Worksheet](designWorksheet.md)
+    * [SLI/SLO Specification Template](sliSloSpecTemplate.md)
 * [Implementation Worksheet](implementWorksheet.md)
-* [Review Worksheet](reviewWorksheet.md)
-* [SLI / SLO Template](sliSloSpecTemplate.md)
+* [Periodic Review Checklist](reviewWorksheet.md)
 
