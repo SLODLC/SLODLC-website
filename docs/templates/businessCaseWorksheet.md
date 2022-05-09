@@ -2,7 +2,7 @@
 id: businesscaseWorksheet
 title: Business Case Worksheet
 sidebar_label: Business Case Worksheet
-sidebar_position: 21
+sidebar_position: 10
 description: Business Case Worksheet
 keywords:
   - resources

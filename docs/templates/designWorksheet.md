@@ -2,7 +2,7 @@
 id: designWorksheet
 title: Design Worksheet
 sidebar_label: Design Worksheet
-sidebar_position: 24
+sidebar_position: 30
 description: Design worksheet
 keywords:
   - resources

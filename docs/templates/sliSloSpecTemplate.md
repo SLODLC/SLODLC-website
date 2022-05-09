@@ -2,7 +2,7 @@
 id: sliSloSpecTemplate
 title: SLI SLO Specification Template
 sidebar_label: "SLI/SLO Specification Template"
-sidebar_position: 23
+sidebar_position: 35
 description: "SLI/SLO Specification Template"
 keywords:
   - resources

@@ -2,7 +2,7 @@
 id: discoveryWorksheet
 title: Discovery Worksheet
 sidebar_label: Discovery Worksheet
-sidebar_position: 22
+sidebar_position: 20
 description: Discovery Worksheet
 keywords:
   - resources
