@@ -114,13 +114,21 @@ const config = {
           icon: '/img/footer/icon-message-docu.svg',
         },
         social: {
+          facebook: {
+            icon: 'img/footer/facebook_icon.svg',
+            link: 'https://www.facebook.com/pages/category/Software-Company/Nobl9-110948960295860/',
+          },
           github: {
             icon: 'img/footer/github_icon.svg',
-            link: 'https://github.com/slodlc',
+            link: 'https://github.com/nobl9',
           },
           twitter: {
             icon: 'img/footer/twitter_icon.svg',
-            link: 'https://twitter.com/slodlc1',
+            link: 'https://twitter.com/nobl9inc',
+          },
+          linkedin: {
+            icon: 'img/footer/linkedin_icon.svg',
+            link: 'https://www.linkedin.com/company/nobl9inc/',
           },
         },
       },
@@ -135,33 +143,55 @@ const config = {
           {
             items: [
               {
+<<<<<<< HEAD
                 label: 'SLODLC Home',
                 href: 'https://slodlc.com/',
+=======
+                label: 'Nobl9 Home',
+                href: 'https://nobl9.com/',
               },
               {
-                label: 'Slack',
-                href: 'https://sloconf.slack.com/archives/C03D261DJM9',
+                label: 'Tutorials',
+                href: 'https://www.nobl9.com/explore/learning-center',
+>>>>>>> parent of db085a0 (updated footer information)
               },
               {
-                label: 'Git Hub',
-                href: 'https://github.com/slodlc',
+                label: 'Tips & Tricks',
+                href: 'https://www.nobl9.com/learn/tips',
               },
               {
-                label: 'Twitter',
-                href: 'https://www.twitter.com/slodlc1',
+                label: 'FAQ',
+                href: 'https://www.nobl9.com/explore/learning-center#faq',
+              },
+              {
+                label: 'Support',
+                href: 'https://www.nobl9.com/contact/support',
               },
             ],
           },
           {
             items: [
               {
+<<<<<<< HEAD
                 label: 'Terms of Use',
                 href: 'Release_Notes/terms',
+=======
+                label: 'Contact Us',
+                href: 'https://nobl9.com/about/#contact',
+              },
+              {
+                label: 'Privacy Policy',
+                href: 'https://nobl9.com/privacy-policy/',
+              },
+              {
+                label: 'Terms of Use',
+                href: 'https://nobl9.com/terms-of-use/',
+>>>>>>> parent of db085a0 (updated footer information)
               },
             ],
           },
         ],
-        copyright: `© 2022 - ${new Date().getFullYear()} Nobl9. All rights reserved.`,
+        copyright: `© 2020 - ${new Date().getFullYear()} Nobl9. All rights reserved.`,
       },
       prism: {
         theme: codeThemes.github,
