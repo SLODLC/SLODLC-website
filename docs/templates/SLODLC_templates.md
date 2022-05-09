@@ -12,10 +12,10 @@ keywords:
 ---
 # Templates
 
-[Business Case worksheet](businessCaseWorksheet.md)
-[Design Worksheet](designWorksheet.md)
-[Discovery Worksheet](discoveryWorksheet.md)
-[Implementation Worksheet](implementWorksheet.md)
-[Review Worksheet](reviewWorksheet.md)
-[SLI / SLO Worksheet](sliSloSpecWorksheet.md)
+* [Business Case worksheet](businessCaseWorksheet.md)
+* [Design Worksheet](designWorksheet.md)
+* [Discovery Worksheet](discoveryWorksheet.md)
+* [Implementation Worksheet](implementWorksheet.md)
+* [Review Worksheet](reviewWorksheet.md)
+* [SLI / SLO Worksheet](sliSloSpecWorksheet.md)
 
