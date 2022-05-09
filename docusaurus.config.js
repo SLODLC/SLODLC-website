@@ -114,21 +114,13 @@ const config = {
           icon: '/img/footer/icon-message-docu.svg',
         },
         social: {
-          facebook: {
-            icon: 'img/footer/facebook_icon.svg',
-            link: 'https://www.facebook.com/pages/category/Software-Company/Nobl9-110948960295860/',
-          },
           github: {
             icon: 'img/footer/github_icon.svg',
-            link: 'https://github.com/nobl9',
+            link: 'https://github.com/slodlc',
           },
           twitter: {
             icon: 'img/footer/twitter_icon.svg',
-            link: 'https://twitter.com/nobl9inc',
-          },
-          linkedin: {
-            icon: 'img/footer/linkedin_icon.svg',
-            link: 'https://www.linkedin.com/company/nobl9inc/',
+            link: 'https://twitter.com/slodlc1',
           },
         },
       },
@@ -143,24 +135,20 @@ const config = {
           {
             items: [
               {
-                label: 'Nobl9 Home',
-                href: 'https://nobl9.com/',
+                label: 'SLODLC Home',
+                href: 'https://slodl.com/',
               },
               {
-                label: 'Tutorials',
-                href: 'https://www.nobl9.com/explore/learning-center',
+                label: 'Slack',
+                href: 'https://sloconf.slack.com/archives/C03D261DJM9',
               },
               {
-                label: 'Tips & Tricks',
-                href: 'https://www.nobl9.com/learn/tips',
+                label: 'Git Hub',
+                href: 'https://github.com/slodlc',
               },
               {
-                label: 'FAQ',
-                href: 'https://www.nobl9.com/explore/learning-center#faq',
-              },
-              {
-                label: 'Support',
-                href: 'https://www.nobl9.com/contact/support',
+                label: 'Twitter',
+                href: 'https://www.twitter.com/slodlc1',
               },
             ],
           },
@@ -171,17 +159,13 @@ const config = {
                 href: 'https://nobl9.com/about/#contact',
               },
               {
-                label: 'Privacy Policy',
-                href: 'https://nobl9.com/privacy-policy/',
-              },
-              {
                 label: 'Terms of Use',
-                href: 'https://nobl9.com/terms-of-use/',
+                href: 'https://slodlc.com/Release_Notes/terms',
               },
             ],
           },
         ],
-        copyright: `© 2020 - ${new Date().getFullYear()} Nobl9. All rights reserved.`,
+        copyright: `© 2022 - ${new Date().getFullYear()} Nobl9. All rights reserved.`,
       },
       prism: {
         theme: codeThemes.github,
