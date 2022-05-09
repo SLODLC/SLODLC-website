@@ -50,7 +50,7 @@ All SLODLC templates, together with examples, can be found here: [link].
 
 
 * SLOconf Slack "go-with-the-slo" workgroup
-* [Contributors]("https://preview.slodlc.com/contributors")
+* [Contributors](https://preview.slodlc.com/contributors)
 
 ### An Introduction to Service Level Objectives (SLOs)
 
