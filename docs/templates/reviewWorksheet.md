@@ -12,7 +12,7 @@ keywords:
   - worksheet
 ---
 
-# SLODLC Review Check Report
+# SLODLC Periodic Review Checklist
 
 **Review Meeting (weekly/monthly/date):**
 
