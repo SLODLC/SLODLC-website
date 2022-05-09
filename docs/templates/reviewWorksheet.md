@@ -1,9 +1,9 @@
 ---
 id: reviewWorksheet
-title: Review Worksheet
-sidebar_label: Review Worksheet
+title: Periodic Review Checklist
+sidebar_label: Periodic Review Checklist
 sidebar_position: 50
-description: Review Worksheet
+description: Periodic Review Checklist
 keywords:
   - resources
   - slo
