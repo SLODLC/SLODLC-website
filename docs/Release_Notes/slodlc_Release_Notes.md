@@ -12,7 +12,7 @@ keywords:
 
 # Application Release Notes
 
-## May 9, 2022
+## May 11, 2022
 
 :::note Inital release of the SLODLC (1.00)
 **Inital release**
