@@ -34,7 +34,6 @@ keywords:
 * Prioritize User Journeys & Expectations
 * Analyze Dependencies
 * Observe System Behavior
-* Memo/Notes
 
 
 ## How to work with Discovery Worksheet
@@ -290,49 +289,3 @@ _Provide examples of existing alerting policies for the service; describe practi
 1. ... 
 
 
-# 5.Memo/Notes
-
-**Meeting**
-
-_Provide information about Discovery Workshop - date/place._
-
-First Discovery session meeting, drafting Discovery Worksheet 4/24/2022
-
-**Attendees**
-
-_Provide information about Discovery Workshop - who/contacts._
-
-John Smith, Joe Doe, Ellis Carr, Chatbot Team
-
-**Agenda**
-
-_Provide information about topics discussed._
-
-
-
-* Round table discussion
-* Preliminary document drafting
-
-**Action Items**
-
-_Provide information about any particular to do’s._
-
-
-
-* John Smith, Senior PM - till the end of the month, finalize Discovery Worksheet with internal Stakeholders, get approval from the whole Chatbot Team
-
-**Decisions**
-
-_Provide information about any particular important decisions made._
-
-
-
-* All attendees agree and commit to the defined project goals.
-
-**Notes**
-
-_Place for any relevant notes to be captured._
-
-
-
-* This document and all others will be available to the whole company as we want to make SLO adoption visible.

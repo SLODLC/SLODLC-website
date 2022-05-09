@@ -32,7 +32,6 @@ keywords:
 * Prepare Business Case
 * Identify Stakeholders
 * Define Desired Outcome
-* Memo/Notes
 
 
 ## How to work with Business Case Worksheet
@@ -171,40 +170,4 @@ _Please describe below - define at least one goal per Key Stakeholder group (Use
     2. Benefit: ...
 
 
-# 4.Memo/Notes
 
-**Meeting**
-
-_Provide  information about the Workshop - date/place_
-
-...
-
-**Attendees**
-
-_Provide  information about the Workshop - who/contacts_
-
-...
-
-**Agenda**
-
-_Provide information about topics discussed._
-
-...
-
-**Action Items**
-
-_Provide information about any particular to do’s._
-
-...
-
-**Decisions**
-
-_Provide information about any particular important decisions made._
-
-...
-
-**Notes**
-
-_Place for any relevant notes to be captured._
-
-...
