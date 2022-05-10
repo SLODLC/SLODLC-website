@@ -422,7 +422,7 @@ Most large, modern enterprises have not one monitoring solution, but several (pe
 
 When collecting SLIs, monitoring and observability are key. Monitoring is about collecting metrics from a system to understand what’s going on in it. The challenge of monitoring is separating the proper signals (the few critical things that need attention) from the noise (the many false signals that are, at best, a distraction). This becomes even more difficult as your system scales. Observe defined SLIs implemented as queries: What measures are collected? Are those meaningful? Will they help achieve goals? Can they be tested? Ensure that the full history of metrics is collected from the beginning. Observability is similar to monitoring but slightly different. Observability measures how well we can understand the internal system state by looking solely at its outputs. In other words, it’s an indication of how well we can deduce internal causes by observing external symptoms.
 
-Document your data sources and related information in the **SLODLC Implement Worksheet**. Update your **SLI/SLO Repository**.
+Document your data sources and related information in the [**SLODLC Implement Worksheet**](templates/implementWorksheet.md). Update your **SLI/SLO Repository**.
 
 ### Publish SLO Goals
 
@@ -430,7 +430,7 @@ SLOs must be published. There are two different topics to cover here. The first 
 
 SLOS-as-Code is a method of defining and setting up SLOs using the command-line interface (CLI) instead of a user-friendly web interface, in a [YAML](https://en.wikipedia.org/wiki/YAML) or [JSON](https://en.wikipedia.org/wiki/JSON) format (both are programing language-independent data formats). Nobl9 provides a dedicated CLI tool, **sloctl**, for creating or updating multiple SLOs simultaneously. You can use **sloctl** to integrate Nobl9 into your CI/CD pipelines. More about **sloctl** can be found in the  [sloctl User Guide](https://docs.nobl9.com/sloctl-user-guide/).
 
-Document how you will publish each SLO in the **SLODLC Implement Worksheet**. Update your **SLI/SLO Repository**.
+Document how you will publish each SLO in the [**SLODLC Implement Worksheet**](templates/implementWorksheet.md). Update your **SLI/SLO Repository**.
 
 ### Enforce Error Budget Policy
 
@@ -438,7 +438,7 @@ Error budgets are what transform metrics into action, but only if they are colle
 
 An SLO culture with error budgets changes the conversation to balance the tradeoffs. While error budget policies might sound like bureaucracy, this is the opposite of politics, where investment decisions are made based on the influence of particular stakeholders. The most challenging situation comes when a team is forced into a reliability-work-only state by depleting their error budget, but a senior stakeholder wants to overturn the policy in favor of a feature release. Management needs to understand the implications.
 
-Plan how to enforce policy usage in the **SLODLC Implement Worksheet**. Update **SLI/SLO Repository**.
+Plan how to enforce policy usage in the [**SLODLC Implement Worksheet**](templates/implementWorksheet.md). Update **SLI/SLO Repository**.
 
 ## Phase 4: Operate
 
@@ -518,7 +518,7 @@ Reports and dashboards are common ways to present data. The insights provided by
 
 Reviews are what make the Design and Operate phases interact iteratively. This activity should be an ingrained habit. Reviews are about stakeholders collaborating in an iterative way to refine established SLOs; all input is welcome, whether it’s related to SLIs, SLOs, error budgets, happiness, or the overall SLO process. SLOs are not a project or a system; they are constantly evolving entities that change along with your services and evolving customer/user demands, with the goal of ensuring the happiness of all stakeholders (Business, Teams, and Users). You may believe that you have the best SLO ever, but the feedback you receive during the following periodic SLO review (for example, on whether the initial SLI/SLO assumptions are still valid) might cause you to refine it.
 
-Reviews should be conducted at a weekly or monthly interval. You may experiment with this cadence at the beginning of SLO adoption to find the best way for your organization. During reviews, use the **SLODLC Periodic Review Checklist**; this template will provide a useful set of checkpoints ensuring the completeness of your review meeting.
+Reviews should be conducted at a weekly or monthly interval. You may experiment with this cadence at the beginning of SLO adoption to find the best way for your organization. During reviews, use the [**SLODLC Periodic Review Checklist**](templates/reviewWorksheet.md); this template will provide a useful set of checkpoints ensuring the completeness of your review meeting.
 
 One of the most intriguing challenges you may encounter as your SLO adoption journey progresses is how your service scaling affects your SLOs. At first sight, this topic might seem a bit overwhelming. You might think you need a dedicated SLO scaling policy - but we have a better solution. First, you must understand that your SLO target will remain the same whether your service is handling 100 requests or, as it scales up, 10,000 requests - 99.5% is 99.5%. Second, as mentioned previously, SLOs are not static; you’ll want to revisit and iterate on your objectives as time passes. Your service, during its life cycle, might experience changes in functionality and utilization that have different effects. For example, increased utilization can lead to more requests, more failed requests, and slower responses), while decreased utilization can have the opposite effect. There are nuances to how scaling affects your SLOs, and scale cannot be considered in isolation. Moving toward a solution, what is needed is a process to guide organizations to create better SLOs. The SLODLC,  with its **built-in feedback loops and periodic reviews**, will help with this. Of course, scaling should trigger reflection on your SLOs, and because your organization will eventually experience such changes, you should plan ahead and include it in your SLODLC documentation as a driver for future SLO adaptation.
 
