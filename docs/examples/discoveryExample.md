@@ -67,7 +67,7 @@ The sole Chatbot service is built upon the dedicated architecture - Chatbot modu
 
 Database: MySQL with product library and Chatbot linguistic library
 
-<img src="/img/discovery_example_arch.png.png" width="100%" alt="diagram" alt="resources-diagram" title="SLODLC"></img>
+<img src="/img/discovery_example_arch.png" width="100%" alt="diagram" alt="resources-diagram" title="SLODLC"></img>
 
 ## 1.2.Owner and Stakeholders
 
