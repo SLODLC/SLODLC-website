@@ -124,7 +124,7 @@ const config = {
           },
           twitter: {
             icon: 'img/footer/twitter_icon.svg',
-            link: 'https://twitter.com/nobl9inc',
+            link: 'https://twitter.com/slodlc1',
           },
           linkedin: {
             icon: 'img/footer/linkedin_icon.svg',
