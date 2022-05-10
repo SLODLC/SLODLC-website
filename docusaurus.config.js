@@ -18,7 +18,7 @@ const newNavConfig = [
   },
   {
     position: 'right',
-    label: 'Contribute ideas on Git Hub',
+    label: 'Contribute ideas on GitHub',
     href: 'https://github.com/SLODLC'
   },
 ]
@@ -139,7 +139,7 @@ const config = {
                 href: 'https://sloconf.slack.com/archives/C03D261DJM9',
               },
               {
-                label: 'Git Hub',
+                label: 'GitHub',
                 href: 'https://github.com/slodlc',
               },
             ],

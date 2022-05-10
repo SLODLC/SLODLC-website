@@ -30,4 +30,4 @@ keywords:
 * [Periodic Review Checklist](/files/SLODLC-Review-Check-Report.docx)
 
 # Downloadable Markdown Templates
-* [Git hub](https://github.com/SLODLC/SLODLC-website/tree/main/docs/templates)
+* [Github](https://github.com/SLODLC/SLODLC-website/tree/main/docs/templates)

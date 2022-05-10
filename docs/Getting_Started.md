@@ -28,4 +28,4 @@ If you want to get involved, join our slack and take a look at our Github repo, 
 ## Useful Links
 
 * [SLODLC Slack Channel](https://sloconf.slack.com/archives/C03D261DJM9)
-* [SLODLC Git Hub](https://github.com/SLODLC)
+* [SLODLC GitHub](https://github.com/SLODLC)
