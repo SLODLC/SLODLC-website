@@ -657,10 +657,3 @@ One final thought: don't focus on default SLOs. Look at your products and servic
 
 This is the end of the SLODLC Handbook - you’ll find more about SLO adoption in the **SLO Adoption Framework** document. We hope you’re able to make good use of all you’ve learned from this handbook, and we wish you all the best in your own SLO journey!
 
-# Templates
-
-1. SLODLC Business Case Worksheet
-2. SLODLC Discovery Worksheet
-3. SLODLC Design Worksheet (with SLI/SLO Specification Templates)
-4. SLODLC Implement Worksheet
-5. SLODLC Periodic Review Checklist
