@@ -87,7 +87,7 @@ Why do we need a methodological approach (accelerators, enablers) to SLO adoptio
 * Leveraging SLOs above and beyond service reliability to drive balance between go-fast and go-safe, making tradeoffs easier and more transparent
 * Fostering an SLO mindset across the organization over time, propagating from team to team and from department to department
 
-This is why [we decided to introduce the SLODLC](contributors.md), a repeatable methodology which will give you a guide to building the SLO capability in your or your client’s organization. With the SLODLC you can launch projects that will help automate and improve reliability and observability in house or for your clients. It can easily be extended and built into your practices and other consulting activities.
+This is why [we decided to introduce the SLODLC](docs/contributors), a repeatable methodology which will give you a guide to building the SLO capability in your or your client’s organization. With the SLODLC you can launch projects that will help automate and improve reliability and observability in house or for your clients. It can easily be extended and built into your practices and other consulting activities.
 
 Software development follows a natural life cycle, usually referred to as the SDLC. The SLODLC is a similar concept, but applied to the life cycle of SLOs instead of software. It should therefore feel familiar to most software development practitioners and will provide a good framework for how to use SLOs in the organization.
 
