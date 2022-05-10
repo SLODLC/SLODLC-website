@@ -12,9 +12,6 @@ keywords:
 # Contributors
 
 ## Founding Members
-- Kit Merker, Nobl9
-- Tomasz Boinski, Nobl9
-- Sal Furino, Nobl9
 - Casey OMara, Oracle
 - Christopher Flaesch, Realogic Solutions
 - Gwen De Leon, IAG
@@ -23,9 +20,12 @@ keywords:
 - Jason Greenwell, Ford
 - Jaypal Sethi, Nobl9
 - Joseph Galley, Accenture
+- Kit Merker, Nobl9
 - Mason Richins, Etsy
 - Prabhu Shankar Gopalakrishnan, Virtusa
+- Sal Furino, Nobl9
 - Stephen Townshend, IAG
+- Tomasz Boinski, Nobl9
 
 ## Contributors:
 - Alex Hidalgo, Nobl9
