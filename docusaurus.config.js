@@ -13,23 +13,13 @@ const newNavConfig = [
   },
   {
     position: 'right',
-    label: 'Tutorials',
-    href: 'https://www.nobl9.com/explore/learning-center'
+    label: 'Join the conversation on Slack',
+    href: 'https://sloconf.slack.com/archives/C03D261DJM9'
   },
   {
     position: 'right',
-    label: 'Tips & Tricks',
-    href: 'https://www.nobl9.com/learn/tips'
-  },
-  {
-    position: 'right',
-    label: 'FAQs',
-    href: 'https://www.nobl9.com/learn/tips'
-  },
-  {
-    position: 'right',
-    label: 'Support',
-    href: 'https://www.nobl9.com/contact/support'
+    label: 'Contribute ideas on GitHub',
+    href: 'https://github.com/SLODLC'
   },
 ]
 
@@ -45,8 +35,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo/favicon.ico',
-  organizationName: 'Nobl9', // Usually your GitHub org/user name.
-  projectName: 'slodlc', // Usually your repo name.
+  organizationName: 'SLODLC', // Usually your GitHub org/user name.
+  projectName: 'SLODLC-WEBSITE', // Usually your repo name.
 
   presets: [
     [
@@ -56,7 +46,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          editUrl: 'https://github.com/nobl9/slodlc',
+          editUrl: 'https://github.com/SLODLC/SLODLC-website/',
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
@@ -120,25 +110,13 @@ const config = {
         editPage: false,
         submitFeedback: {
           text: 'Submit Feedback',
-          href: 'mailto:feedback@nobl9.com',
+          href: 'mailto:slodlc@nobl9.com',
           icon: '/img/footer/icon-message-docu.svg',
         },
-        social: {
-          facebook: {
-            icon: 'img/footer/facebook_icon.svg',
-            link: 'https://www.facebook.com/pages/category/Software-Company/Nobl9-110948960295860/',
-          },
+	social: {
           github: {
             icon: 'img/footer/github_icon.svg',
-            link: 'https://github.com/nobl9',
-          },
-          twitter: {
-            icon: 'img/footer/twitter_icon.svg',
-            link: 'https://twitter.com/nobl9inc',
-          },
-          linkedin: {
-            icon: 'img/footer/linkedin_icon.svg',
-            link: 'https://www.linkedin.com/company/nobl9inc/',
+            link: 'https://github.com/slodlc',
           },
         },
       },
@@ -153,45 +131,29 @@ const config = {
           {
             items: [
               {
-                label: 'Nobl9 Home',
-                href: 'https://nobl9.com/',
+                label: 'SLODLC Home',
+                href: 'https://slodlc.com/',
               },
               {
-                label: 'Tutorials',
-                href: 'https://www.nobl9.com/explore/learning-center',
+                label: 'Slack',
+                href: 'https://sloconf.slack.com/archives/C03D261DJM9',
               },
               {
-                label: 'Tips & Tricks',
-                href: 'https://www.nobl9.com/learn/tips',
-              },
-              {
-                label: 'FAQ',
-                href: 'https://www.nobl9.com/explore/learning-center#faq',
-              },
-              {
-                label: 'Support',
-                href: 'https://www.nobl9.com/contact/support',
+                label: 'GitHub',
+                href: 'https://github.com/slodlc',
               },
             ],
           },
           {
             items: [
               {
-                label: 'Contact Us',
-                href: 'https://nobl9.com/about/#contact',
-              },
-              {
-                label: 'Privacy Policy',
-                href: 'https://nobl9.com/privacy-policy/',
-              },
-              {
                 label: 'Terms of Use',
-                href: 'https://nobl9.com/terms-of-use/',
+                to: 'Release_Notes/License/',
               },
             ],
           },
         ],
-        copyright: `© 2020 - ${new Date().getFullYear()} Nobl9. All rights reserved.`,
+        copyright: `© 2022 - ${new Date().getFullYear()} Nobl9. All rights reserved.`,
       },
       prism: {
         theme: codeThemes.github,
