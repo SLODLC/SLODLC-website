@@ -161,7 +161,7 @@ const config = {
             ],
           },
         ],
-        copyright: `© 2020 - ${new Date().getFullYear()} Nobl9. All rights reserved.`,
+        copyright: `© 2022 - ${new Date().getFullYear()} Nobl9. All rights reserved.`,
       },
       prism: {
         theme: codeThemes.github,
