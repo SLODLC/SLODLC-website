@@ -156,7 +156,7 @@ const config = {
             items: [
               {
                 label: 'Terms of Use',
-                to: 'Release_Notes/Terms/',
+                to: 'Release_Notes/License/',
               },
             ],
           },
