@@ -176,7 +176,7 @@ const config = {
               },
               {
                 label: 'Terms of Use',
-                to: 'docs/Release_Notes/Terms/',
+                to: 'Release_Notes/Terms/',
               },
             ],
           },
