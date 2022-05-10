@@ -35,8 +35,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo/favicon.ico',
-  organizationName: 'Nobl9', // Usually your GitHub org/user name.
-  projectName: 'slodlc', // Usually your repo name.
+  organizationName: 'SLODLC', // Usually your GitHub org/user name.
+  projectName: 'SLODLC-WEBSITE', // Usually your repo name.
 
   presets: [
     [
@@ -46,7 +46,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          editUrl: 'https://github.com/nobl9/slodlc',
+          editUrl: 'https://github.com/SLODLC/SLODLC-website/',
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
