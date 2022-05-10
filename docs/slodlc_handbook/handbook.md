@@ -147,7 +147,7 @@ User journeys represent the user's entire experience while interacting with a pa
 
 The next step takes place in group workshops with key stakeholders. The potential list of products or services with eventual metrics should be prioritized to ensure the best outcomes related to the defined goals of SLO adoption. User expectations should be considered to carefully choose the target levels of reliability that each product or service needs. Incorporate business intelligence insights into prioritization to assess unique user needs. Find your own way with prioritization, don't copy what others suggest without criticism - each organization is unique. Critical infrastructure and user-facing products/services are two areas that are great to start with. Put those at the top of your list, regardless of what else is on it.
 
-Document your priorities in the **SLODLC Discovery Worksheet**.
+Document your priorities in the [**SLODLC Discovery Worksheet**](templates/discoveryWorksheet.md).
 
 ### Analyze Dependencies
 
@@ -157,7 +157,7 @@ To understand the reasons for a system's behavior, we need to understand the dep
 * The **second iteration** focuses on cross–user journey dependencies and constraints; identify and note them.
 * The **third interaction** focuses on reprioritization - there is a high chance that you will identify dependencies and constraints that will impact your initial prioritization, and you’ll need to rethink it.
 
-Document the results of this prioritization step in the **SLODLC Discovery Worksheet**.
+Document the results of this prioritization step in the [**SLODLC Discovery Worksheet**](templates/discoveryWorksheet.md).
 
 ### Observe System Behavior
 
@@ -165,7 +165,7 @@ For successful SLO adoption, you must ensure that you have monitoring and observ
 
 Document the results of this investigation, and write solid case studies for selected outages. Ensure you have access to all the essential related data and collected history - that is, that the required data sources are available to you, you understand each data source’s data retention policies, and you know what metrics are in place. This information can be captured in the **SLODLC Discovery Worksheet** and shared with stakeholders, and referenced in the future phases. This is also an excellent opportunity to review your data collection and metrics storage practices and identify any gaps.
 
-Document your observations in the **SLODLC Discovery Worksheet**.
+Document your observations in the [**SLODLC Discovery Worksheet**](templates/discoveryWorksheet.md).
 
 ## Phase 2: Design
 
@@ -388,7 +388,7 @@ At this point it’s a good idea to conduct a risk assessment to help you figure
 
 We recommend this as a group workshop exercise with key stakeholders.
 
-Document your achievable SLOs in the **SLI/SLO Specification Templates**. Update your **SLI/SLO Repository**.
+Document your achievable SLOs in the [**SLI/SLO Specification Templates**](templates/sliSloSpecTemplate.md). Update your **SLI/SLO Repository**.
 
 ### Define Aspirational SLOs
 
@@ -396,7 +396,7 @@ Document your achievable SLOs in the **SLI/SLO Specification Templates**. Update
 
 This is a good point to talk a little more about testing. It is recommended to test SLOs early and often, regardless of which step of the SLODLC you are at. Stakeholders should collaborate to test SLOs in real-life scenarios against expectations, formal assumptions, and goals, as well as verifying that they are meaningful. Consider which type of time window is more appropriate for each SLO (rolling or calendar-aligned), and which budgeting method makes more sense (Occurrences or Time Slices). Depending on the type of metric you select, test thresholds vs. best practices and expectations, or test the ratio of good/bad to total requests or minutes.
 
-Document your aspirational SLOs in the **SLI/SLO Specification Templates**. Update your **SLI/SLO Repository**.
+Document your aspirational SLOs in the [**SLI/SLO Specification Templates**](templates/sliSloSpecTemplate.md). Update your **SLI/SLO Repository**.
 
 ### Establish Error Budgets
 
@@ -408,7 +408,7 @@ The general remedy is to focus on improving reliability if you are utilizing you
 
 An important operational function of the error budget is the dynamic burn rate. It considers the following factors: current error rate, remaining error budget, and time until the error budget is refreshed. The goal of the burn rate calculation is to understand if the current burn rate will deplete the available error budget, and how fast. The team should set up error budget triggers in the attached policies to alert them when the burn rate increases for more than a short period.
 
-Document error budgets along with your SLOs in the **SLI/SLO Specification Templates**. Update your **SLI/SLO Repository**.
+Document error budgets along with your SLOs in the [**SLI/SLO Specification Templates**](templates/sliSloSpecTemplate.md). Update your **SLI/SLO Repository**.
 
 ## Phase 3: Implement
 
