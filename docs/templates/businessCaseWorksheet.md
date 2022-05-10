@@ -170,4 +170,4 @@ _Please describe below - define at least one goal per Key Stakeholder group (Use
     2. Benefit: ...
 
 
-
+This template is part of SLODLC https://slodlc.com/Release_Notes/License

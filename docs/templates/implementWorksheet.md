@@ -114,3 +114,4 @@ _Verify SLI/SLO visibility - are those accessible via different channels like da
 _Check your SLI/SLO implementation completeness - work with each of your defined SLI and SLOs captured in SLI/SLO Repository. Both, Adoption Leader and selected The Team Representative (might be a SLO Owner defined per SLO) should confirm completeness (SLI/SLO deployed and published). Get approval through accepting this document/section 5.1, for instance by email. List all SLIs/SLOs from SLI/SLO Repository - mark what is completed._
 
 ...
+This template is part of SLODLC https://slodlc.com/Release_Notes/License
