@@ -22,10 +22,10 @@ keywords:
 
 # Downloadable docx Templates
 
-* [Business Case worksheet](files/1. SLODLC Business Case Worksheet.docx)
-* [Discovery Worksheet](files/2. SLODLC Discovery Worksheet.docx)
-* [Design Worksheet](files/3. SLODLC Design Worksheet.docx)
-    * [SLI/SLO Specification Template](files/3. SLI_SLO Specification Template.docx)
-* [Implementation Worksheet](files/4. SLODLC Implement Worksheet.docx)
-* [Periodic Review Checklist](files/5. SLODLC Review Check Report.docx)
+* [Business Case worksheet](/files/SLODLC-Business-Case-Worksheet.docx)
+* [Discovery Worksheet](/files/SLODLC-Discovery-Worksheet.docx)
+* [Design Worksheet](/files/SLODLC-Design-Worksheet.docx)
+    * [SLI/SLO Specification Template](/files/SLI-SLO-Specification-Template.docx)
+* [Implementation Worksheet](/files/SLODLC-Implement-Worksheet.docx)
+* [Periodic Review Checklist](/files/SLODLC-Review-Check-Report.docx)
 
