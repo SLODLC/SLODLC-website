@@ -67,6 +67,7 @@ The sole Chatbot service is built upon the dedicated architecture - Chatbot modu
 
 Database: MySQL with product library and Chatbot linguistic library
 
+<img src="/img/discovery_example_arch.png.png" width="100%" alt="diagram" alt="resources-diagram" title="SLODLC"></img>
 
 ## 1.2.Owner and Stakeholders
 
@@ -173,13 +174,16 @@ _Provide information; a list of Users of the service, every stakeholder interact
 
 _Provide description or a diagram of The User Journey with their boundaries - for all listed Users in 2.1; you might use your architectural diagrams or other dedicated documentation. As an alternative, use user cases/stories, process flows_.
 
-We will use the service diagram from point 1.1 with 2 critical customers/external service users' journeys (customers visiting our online shop using Chatbot services). We will focus on 2 User Journeys in the first Discovery Iteration:
+We will use the service diagram from point 1.1 with 2 critical customers/external service users' journeys (customers visiting our online shop using Chatbot services). 
 
+<img src="/img/discovery_example_user_journey.png" width="100%" alt="diagram" alt="resources-diagram" title="SLODLC"></img>
 
+We will focus on 2 User Journeys in the first Discovery Iteration:
 
 1. Latency and availability of online shop web servers are essential to both customers and the company. Customer experience with us is translated by happiness and satisfaction; latency of online shop is the number one factor contributing towards that.
 2. Latency of Chatbot - latency between Web Server and Controller App server is the primary customer activity on our website, which contributes to customer happiness and satisfaction. We want our Chatbot to be responsive and meet customers' expectations and that is by having exceptional latency.
 
+<img src="/img/discovery_example_user_journey_2.png" width="100%" alt="diagram" alt="resources-diagram" title="SLODLC"></img>
 
 ## 2.3.User Expectations per Journey
 
