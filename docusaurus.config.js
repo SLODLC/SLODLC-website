@@ -113,18 +113,22 @@ const config = {
           href: 'mailto:feedback@nobl9.com',
           icon: '/img/footer/icon-message-docu.svg',
         },
-        social: {
+	social: {
           facebook: {
             icon: 'img/footer/facebook_icon.svg',
             link: 'https://www.facebook.com/pages/category/Software-Company/Nobl9-110948960295860/',
           },
           github: {
             icon: 'img/footer/github_icon.svg',
-            link: 'https://github.com/slodlc',
+            link: 'https://github.com/nobl9',
           },
           twitter: {
             icon: 'img/footer/twitter_icon.svg',
-            link: 'https://twitter.com/slodlc1',
+            link: 'https://twitter.com/nobl9inc',
+          },
+          linkedin: {
+            icon: 'img/footer/linkedin_icon.svg',
+            link: 'https://www.linkedin.com/company/nobl9inc/',
           },
         },
       },
