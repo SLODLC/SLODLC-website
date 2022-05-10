@@ -105,7 +105,7 @@ In this initial phase, you will formalize the scope, goals, and roles within the
 
 The first step is to create a short and compelling summary of why you are embarking on this journey. This document should be business- and outcome-focused and clearly articulate the required resources, schedule, roles, investments, and desired outcomes for the project. You will be updating this document as you progress through the SLODLC to ensure that all stakeholders are aware of progress and any changes in direction as the scope is refined. Ideally, you will have several stakeholders review and approve the document at the outset of the project, and more will join the charge later.
 
-Lay out the business case in your **SLODLC Business Case Worksheet**.
+Lay out the business case in your [**SLODLC Business Case Worksheet**](templates/businessCaseWorksheet.md).
 
 ### Identify Stakeholders
 
@@ -123,7 +123,7 @@ Business stakeholders are any stakeholders responsible for the organization's bu
 
 Generally speaking, all stakeholders working together to satisfy users and grow the business are the Team. You can find them contributing with dedication and hard work to service or product operation across the organization; they include technical people, engineers of different specialties responsible for development and operations, SREs accountable for reliability, and other supporting roles like analysts and testers.
 
-Document all stakeholders in your **SLODLC Business Case Worksheet**. 
+Document all stakeholders in your [**SLODLC Business Case Worksheet**](templates/businessCaseWorksheet.md). 
 
 ### Define Desired Outcomes
 
