@@ -17,7 +17,7 @@ The Service Level Objective Development Lifecycle (SLODLC) is a repeatable metho
 
 ## How to use the SLODLC
 
-* Handbook (link) provides a comprehense overview of the SLODLC and how it can be used in organizations or by service providers
+* [Handbook](slodlc_handbook/handbook.md) provides a comprehense overview of the SLODLC and how it can be used in organizations or by service providers
 
 * Templates (link) fit each phase of the SLODLC to quickly guide you through the process
 
