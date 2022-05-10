@@ -1,15 +1,15 @@
 ---
 id: License
-title: Terms of Service
-sidebar_label: Terms of Service
+title: License
+sidebar_label: License
 sidebar_position: 30
 toc_min_heading_level: 2
 toc_max_heading_level: 5
 description: SLODLC License
 keywords:
   - glossary
-  - terms
-  - service
+  - License
+  - Legal
 ---
 Copyright [2022] [Nobl9 Inc]
 
