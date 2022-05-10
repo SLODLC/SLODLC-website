@@ -147,20 +147,16 @@ const config = {
                 href: 'https://slodlc.com/',
               },
               {
-                label: 'Tutorials',
-                href: 'https://www.nobl9.com/explore/learning-center',
+                label: 'Slack',
+                href: 'https://sloconf.slack.com/archives/C03D261DJM9',
               },
               {
-                label: 'Tips & Tricks',
-                href: 'https://www.nobl9.com/learn/tips',
+                label: 'Git Hub',
+                href: 'https://github.com/slodlc',
               },
               {
-                label: 'FAQ',
-                href: 'https://www.nobl9.com/explore/learning-center#faq',
-              },
-              {
-                label: 'Support',
-                href: 'https://www.nobl9.com/contact/support',
+                label: 'Twitter',
+                href: 'https://www.twitter.com/slodlc1',
               },
             ],
           },
