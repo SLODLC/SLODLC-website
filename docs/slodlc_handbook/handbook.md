@@ -137,7 +137,7 @@ There is a section in the Business Case Worksheet for Defining Desired Outcomes.
 
 Before you start building SLOs, you need to understand the system and collect information about what matters to your stakeholders. **Prioritize User Journeys **to focus your efforts, **Analyze Dependencies** to see how the chain of reliability fits together, and **Observe System Behavior **to ground yourself in the state of the current environment. This phase will provide context for the following phases of the SLODLC and help you decide what to concentrate on.
 
-The **SLODLC Discovery Worksheet** is available [here](templates/discoveryTemplate.md).
+The **SLODLC Discovery Worksheet** is available [here](templates/discoveryWorksheet.md).
 
 ### Prioritize User Journeys
 
@@ -175,7 +175,7 @@ Work backward - it's easy to use the wrong metric or focus on the wrong workflow
 
 The Design phase has two important dependencies. First, all deliverables will be implemented in the Implement phase, and during those activities you might receive additional feedback that will lead to another design iteration. Second, during this phase you will receive feedback from the periodic reviews (discussed in “Review Periodically” below). Reviewing and modifying your SLO targets is normal and expected, so be prepared for it. Remember that the Design phase is not a one-off process. As you implement the SLODLC, you will likely revisit this phase multiple times as the deliverables are implemented and improved. The SLODLC requires you to review your SLOs and SLIs at each step and act if changes need to be made, similar to the [“Plan, Do, Study, Act” or Deming Cycle](https://deming.org/explore/pdsa/).
 
-The **SLODLC Design Worksheet** is available here: [here](templates/designTemplate.md).
+The **SLODLC Design Worksheet** is available here: [here](templates/designWorksheet.md).
 
 ### Define Meaningful SLIs
 
@@ -414,7 +414,7 @@ Document error budgets along with your SLOs in the **SLI/SLO Specification Templ
 
 Now it’s time to implement your work by making all your defined, meaningful SLIs and SLO live. Start with the implementation of SLIs in your monitoring solutions, and update old ones if needed. Work with the **SLODLC Design Worksheet** - it's all there. In this phase you’ll **Collect SLIs** to get insights from your production environments and systems and **Publish Your SLO Goals**, making them visible on the SLO platforms and to the whole organization. It’s the **SLO Adoption Leader** and **SLO Owner's** responsibility to ensure the SLOs are published successfully (both roles are explained in the **SLO Adoption Framework** document), using a defined communication strategy (explained in the same document). You’ll also need to **Enforce Your Error Budget Policies**. As mentioned in the previous section, these policies should cover everything related to your established error budgets, including how to handle budget utilization and correlated alerting, escalation thresholds, and the actions to take. 
 
-The **SLODLC Implement Worksheet** is available here: [here](templates/implementTemplate.md).
+The **SLODLC Implement Worksheet** is available here: [here](templates/implementWorksheet.md).
 
 ### Collect SLIs
 
@@ -444,7 +444,7 @@ Plan how to enforce policy usage in the **SLODLC Implement Worksheet**. Update *
 
 The Operate phase in the SLODLC represents the ordinary, day-to-day business-as-usual SLO use across the organization. This is when your working SLOs trigger events and you have to **Respond to Error Budget Events & Alerts**. Teams are establishing countermeasures for data bias and degradation to **Ensure SLI Data Cleanliness**. During this stage, you should already have well-established habits of periodic reviews - weekly or monthly according to the necessity and context of your business - the results of which you can use to **Adjust the Targets**. And you can use the metric data your monitoring systems are collecting to **Gain SLO Insights** as often as possible.
 
-The **SLODLC Periodic Review Checklist** is available here: [here](templates/implementTemplate.md).
+The **SLODLC Periodic Review Checklist** is available here: [here](templates/reviewWorksheet.md).
 
 ### Respond to Error Budget Events & Alerts
 
@@ -522,7 +522,7 @@ Reviews should be conducted at a weekly or monthly interval. You may experiment 
 
 One of the most intriguing SLO challenges you may find at the beginning of your SLO adoption is how your service scaling may affect your SLOs. At first sight, this topic might look a bit overwhelming. One might think: "Ohh, we need a dedicated SLO Scaling Policy!". It’s not true - we have a better solution. First, we must understand that with the beauty of math, with 99.5% objective SLO, it will still be 99.5% if you're talking about 100 requests or 10000 requests regarding your scaled-up service. Second, you want to re-address and iterate on your objectives as time passes - regarding scaling events. Your service, during its life cycle, might experience different utilization changes like an increase (more requests, more failed requests, slower responses), decrease (less and less requests, less traffic in general), or functional (functionality changes). So, with SLOs, don't assume service scaling as something unique that might impact your SLOs. Moving towards a solution -a process approach to guide organizations to create better SLOs. **The SLODLC with built-in feedback loops and periodic reviews comes with help.** Of course, scaling should trigger a reflection on SLOs. Your organization will eventually experience such changes - plan ahead and add explicit scaling to your SLODLC documentation as a driver for future SLO adaptation.
 
-The **SLODLC Periodic Review Checklist** is available here: [here](templates/reviewTemplate.md)
+The **SLODLC Periodic Review Checklist** is available here: [here](templates/reviewWorksheet.md)
 
 ## Align with Service & Software and Business Development Life Cycles
 
