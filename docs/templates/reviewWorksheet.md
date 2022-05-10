@@ -83,4 +83,8 @@ _Provide information about any particular important decisions made._
 _Place for any relevant notes to be captured._
 
 ...
+
+
+
+
 This template is part of SLODLC https://slodlc.com/Release_Notes/License
