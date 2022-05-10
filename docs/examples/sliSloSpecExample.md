@@ -168,3 +168,6 @@ _Recurring date; an interval when to revisit SLO._
     2. Actual Date: >...
 3. Planned Date: 7/22/2022
     3. Actual Date: >...
+
+
+This template is part of SLODLC https://slodlc.com/Release_Notes/License

@@ -102,3 +102,6 @@ _Place for any relevant notes to be captured._
 
 * Place for any relevant notes to be captured
 * This document and all others will be available to the whole company as we want to make SLO adoption visible (add to the SLI/SLO Repo)
+
+
+This template is part of SLODLC https://slodlc.com/Release_Notes/License
