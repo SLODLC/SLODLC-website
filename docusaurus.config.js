@@ -143,8 +143,8 @@ const config = {
           {
             items: [
               {
-                label: 'Nobl9 Home',
-                href: 'https://nobl9.com/',
+                label: 'SLODLC Home',
+                href: 'https://slodlc.com/',
               },
               {
                 label: 'Tutorials',
