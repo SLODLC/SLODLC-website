@@ -155,14 +155,6 @@ const config = {
           {
             items: [
               {
-                label: 'Contact Us',
-                href: 'https://nobl9.com/about/#contact',
-              },
-              {
-                label: 'Privacy Policy',
-                href: 'https://nobl9.com/privacy-policy/',
-              },
-              {
                 label: 'Terms of Use',
                 to: 'Release_Notes/Terms/',
               },
