@@ -11,6 +11,9 @@ keywords:
 ---
 
 # Examples
-these are examples
-put table of contents here
-slodlcexamples.md
+* [Business Case worksheet](businessCaseExample.md)
+* [Discovery Example](discoveryExample.md)
+* [Design Example](designExample.md)
+    * [SLI/SLO Specification Template](sliSloSpecExample.md)
+* [Implementation Example](implementExample.md)
+* [Periodic Review Checklist](reviewExample.md)
