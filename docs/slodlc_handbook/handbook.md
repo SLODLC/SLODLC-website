@@ -137,7 +137,7 @@ There is a section in the Business Case Worksheet for Defining Desired Outcomes.
 
 Before you start building SLOs, you need to understand the system and collect information about what matters to your stakeholders. **Prioritize User Journeys **to focus your efforts, **Analyze Dependencies** to see how the chain of reliability fits together, and **Observe System Behavior **to ground yourself in the state of the current environment. This phase will provide context for the following phases of the SLODLC and help you decide what to concentrate on.
 
-The **SLODLC Discovery Worksheet** is available here: [link].
+The **SLODLC Discovery Worksheet** is available [here](docs/template/discoveryTemplate.md).
 
 ### Prioritize User Journeys
 
