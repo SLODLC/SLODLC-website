@@ -120,15 +120,11 @@ const config = {
           },
           github: {
             icon: 'img/footer/github_icon.svg',
-            link: 'https://github.com/nobl9',
+            link: 'https://github.com/slodlc',
           },
           twitter: {
             icon: 'img/footer/twitter_icon.svg',
-            link: 'https://twitter.com/nobl9inc',
-          },
-          linkedin: {
-            icon: 'img/footer/linkedin_icon.svg',
-            link: 'https://www.linkedin.com/company/nobl9inc/',
+            link: 'https://twitter.com/slodlc1',
           },
         },
       },
