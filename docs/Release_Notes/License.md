@@ -1,17 +1,17 @@
 ---
-id: terms
+id: License
 title: Terms of Service
 sidebar_label: Terms of Service
 sidebar_position: 30
 toc_min_heading_level: 2
 toc_max_heading_level: 5
-description: SLODLC Terms of Service
+description: SLODLC License
 keywords:
   - glossary
   - terms
   - service
 ---
-Copyright [2022] [name of copyright owner]
+Copyright [2022] [Nobl9 Inc]
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
