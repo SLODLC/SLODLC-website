@@ -1,7 +1,7 @@
 ---
-id: designWorksheet
-title: Design Worksheet
-sidebar_label: Design Worksheet
+id: designExample
+title: Design Example
+sidebar_label: Design Example
 sidebar_position: 30
 description: Design worksheet
 keywords:
@@ -11,20 +11,19 @@ keywords:
   - design
   - worksheet
 ---
+# EXAMPLE of SLODLC Design Worksheet
 
-# SLODLC Design Worksheet
+**Service Name:** Chatbot
 
-**Service Name:**
+**SLODLC Adoption:** Project “SLOtisfactionary Chatbot”
 
-**SLODLC Adoption:**
+**SLO Adoption Leader:** John Smith, Senior PM, jsmith@bestprepaidgsm.com
 
-**SLO Adoption Leader:**
+**Worksheet Owner:** Joe Doe, SRE, jdoe@bestprepaidgsm.com
 
-**Worksheet Owner:**
+**Document Status:** Example Draft
 
-**Document Status:**
-
-**Related Docs:**
+**Related Docs:** EXAMPLE of 1. SLODLC Business Case Worksheet v1.1, EXAMPLE of 2. SLODLC Discovery Worksheet v2.3
 
 
 ## Design Worksheet Scope
@@ -61,7 +60,11 @@ _Combine all your filed SLI/SLO templates into one SLI/SLO Repository (one file 
 
 _Type any notes or remarks which might be helpful in the future; optional - capture lessons learned._
 
-...
+New SLIs/SLOs definition - For each SLI we will work with one SLI/SLO Specification Template. All templates shall be stored in a dedicated directory called SLI/SLO Repository. Repository will be available to all employees and SLO adoption consultants working with us. EXAMPLE of 2. SLODLC Discovery Worksheet v2.3 was used as an input.
+
+Links per SLI and related SLOs: SLI #1 -  SLI/SLO Specification
+
+Lessons Learned - despite this being our first experience with repetitive SLODLC methodology we found it easy to discover and define SLOs. SLODLC process is guiding all precipitant leaving no place for misunderstanding.
 
 
 # 2.Define Achievable SLOs
@@ -73,7 +76,7 @@ _Work with each of your defined SLI captured in SLI/SLO Repository - Define Achi
 
 _Type any notes or remarks which might be helpful in the future; optional - capture lessons learned._
 
-...
+Links per SLI and related SLOs: SLI #1 -  SLI/SLO Specification - Achievable SLOs definition included
 
 
 ## 2.2.Risk Assessment Exercise
@@ -82,7 +85,7 @@ _Risk assessment will help you to figure out what's achievable, what's aspiratio
 
 _Type any notes or remarks which might be helpful in the future; optional - capture lessons learned._
 
-...
+Lessons Learned - risk assessment exercise provided helpful guidelines, this is a valuable step during any SLO journey, we encourage to conduct this exercise with all stakeholders during SLO workshop or BootCamp.
 
 
 # 3.Define Aspirational SLOs
@@ -94,7 +97,7 @@ Work with each of your defined achievable SLO captured in SLI/SLO Repository - D
 
 Type any notes or remarks which might be helpful in the future; optional - capture lessons learned.
 
-...
+Links per SLI and related SLOs: SLI #1 -  SLI/SLO Specification - Aspirational SLOs definition included
 
 
 # 4.Establish Error Budgets
@@ -106,4 +109,4 @@ _Work with each of your defined SLOs captured in SLI/SLO Repository (at this tim
 
 _Type any notes or remarks which might be helpful in the future; optional - capture lessons learned._
 
-...
+Links per SLI and related SLOs: SLI #1 -  SLI/SLO Specification - Error Budgets definition included
