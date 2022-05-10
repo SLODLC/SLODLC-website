@@ -110,7 +110,7 @@ const config = {
         editPage: false,
         submitFeedback: {
           text: 'Submit Feedback',
-          href: 'mailto:feedback@nobl9.com',
+          href: 'mailto:slodlc@nobl9.com',
           icon: '/img/footer/icon-message-docu.svg',
         },
 	social: {
@@ -120,7 +120,7 @@ const config = {
           },
           github: {
             icon: 'img/footer/github_icon.svg',
-            link: 'https://github.com/nobl9',
+            link: 'https://github.com/slodlc',
           },
           twitter: {
             icon: 'img/footer/twitter_icon.svg',
