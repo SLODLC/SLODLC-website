@@ -142,10 +142,6 @@ const config = {
                 label: 'Git Hub',
                 href: 'https://github.com/slodlc',
               },
-              {
-                label: 'Twitter',
-                href: 'https://www.twitter.com/slodlc1',
-              },
             ],
           },
           {
