@@ -176,7 +176,7 @@ const config = {
               },
               {
                 label: 'Terms of Use',
-                href: 'https://nobl9.com/terms-of-use/',
+                href: 'ReleaseNotes/Terms.md',
               },
             ],
           },
