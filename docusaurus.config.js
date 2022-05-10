@@ -114,10 +114,6 @@ const config = {
           icon: '/img/footer/icon-message-docu.svg',
         },
 	social: {
-          facebook: {
-            icon: 'img/footer/facebook_icon.svg',
-            link: 'https://www.facebook.com/pages/category/Software-Company/Nobl9-110948960295860/',
-          },
           github: {
             icon: 'img/footer/github_icon.svg',
             link: 'https://github.com/slodlc',
@@ -125,10 +121,6 @@ const config = {
           twitter: {
             icon: 'img/footer/twitter_icon.svg',
             link: 'https://twitter.com/slodlc1',
-          },
-          linkedin: {
-            icon: 'img/footer/linkedin_icon.svg',
-            link: 'https://www.linkedin.com/company/nobl9inc/',
           },
         },
       },
