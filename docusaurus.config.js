@@ -118,10 +118,6 @@ const config = {
             icon: 'img/footer/github_icon.svg',
             link: 'https://github.com/slodlc',
           },
-          twitter: {
-            icon: 'img/footer/twitter_icon.svg',
-            link: 'https://twitter.com/slodlc1',
-          },
         },
       },
       footer: {

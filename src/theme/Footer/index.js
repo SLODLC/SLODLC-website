@@ -105,9 +105,6 @@ function MultiColumnLinks({links, logo, copyright, footer, sources, customFields
         </div>
       ))}
       <div className="col footer__col">
-        <a href={customFields.social.twitter.link} target="_blank">
-          <img src={useBaseUrl(customFields.social.twitter.icon)} className="footer__social-icon" width="16" height="16"/>
-        </a>
         <a href={customFields.social.github.link} target="_blank">
           <img src={useBaseUrl(customFields.social.github.icon)} className="footer__social-icon" width="16" height="16"/>
         </a>
