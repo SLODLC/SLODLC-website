@@ -104,7 +104,7 @@ const config = {
         items: newNavConfig,
       },
       metadata: [
-        {name: 'og:image', content: '/img/dog/docu_meta_image_twitter.jpg'}
+        {name: 'og:image', content: '/img/dog/slodlc_meta_image.png'}
       ],
       customFields: {
         editPage: false,

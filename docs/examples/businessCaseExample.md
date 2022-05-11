@@ -57,7 +57,7 @@ _Please describe below._
 
 Our company "BestPrePaidGSM" operates an online comparison service, a website, with all market prepaid phone plans offered. The offering process is a conversation between the customer of the internet-store and a Chatbot. We use automated AI Chatbots to gather customers' needs, and then we propose the best fitted prepaid phone plan. We want to make our services exceptional; therefore, we want to understand customer intent accurately, automate repetitive queries seamlessly, and significantly improve first response times and offering times.
 
- 
+
 
 
 ## 1.2.Achievable Goals
@@ -150,21 +150,21 @@ _Please describe your schedule baseline below._
 
 
 1. Milestone: Project Charter Sign Off
-    1. Date mm/dd/yyyy: 5/1/2022
+    * Date mm/dd/yyyy: 5/1/2022
 2. Milestone: Project Plan Review and Completion
-    2. Date mm/dd/yyyy: 5/20/2022
+    * Date mm/dd/yyyy: 5/20/2022
 3. Milestone: Project Kickoff
-    3. Date mm/dd/yyyy: 5/27/2022
+    * Date mm/dd/yyyy: 5/27/2022
 4. Milestone: Platform with SLIs/SLOs evaluation start
-    4. Date mm/dd/yyyy: 6/1/2022
+    * Date mm/dd/yyyy: 6/1/2022
 5. Milestone: Platform with SLIs/SLOs evaluation end
-    5. Date mm/dd/yyyy: 6/30/2022
+    * Date mm/dd/yyyy: 6/30/2022
 6. Milestone: Trainings materials delivered
-    6. Date mm/dd/yyyy: 6/30/2022
+    * Date mm/dd/yyyy: 6/30/2022
 7. Milestone: Operational GoLive
-    7. Date mm/dd/yyyy: 7/3/2022
+    * Date mm/dd/yyyy: 7/3/2022
 8. Milestone: Project Closure
-    8. Date mm/dd/yyyy: 12/1/2022
+    * Date mm/dd/yyyy: 12/1/2022
 
 
 ## 1.11.Preliminary Risks / Opportunities
