@@ -57,7 +57,7 @@ _SLI calculation formula - threshold or ratio type._
 
 ## SLI Query - OPTIONAL
 
-_SLI data query code (codes for ratio) if you already can write them; a sudo code of a query at this time is just fine._
+_SLI data query code (codes for ratio) if you already can write them; a pseudocode of a query at this time is just fine._
 
 ...
 
