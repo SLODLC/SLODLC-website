@@ -25,7 +25,7 @@ keywords:
 - Prabhu Shankar Gopalakrishnan, Virtusa
 - Sal Furino, Nobl9
 - Stephen Townshend, IAG
-- Tomasz Boinski, Nobl9
+- [Tomasz Boinski](https://www.linkedin.com/in/tomaszboinski/), [Nobl9](https://www.nobl9.com/)
 
 ## Contributors:
 - Alex Hidalgo, Nobl9
