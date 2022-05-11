@@ -34,7 +34,7 @@ keywords:
 - Corey Samuels, Etsy
 - Kinga Kisielinska, Nobl9
 - Marco Torre, Accenture
-- Matthew Macdonald-Wallace, Contino
+- [Matthew Macdonald-Wallace](https://www.linkedin.com/in/mattmacdonald-wallace/), [Contino](https://www.contino.io)
 - Nader Mortazavi, Nobl9
 - Quan To, Nobl9
 - Rachel Head, Nobl9
