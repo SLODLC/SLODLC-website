@@ -34,7 +34,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'static/img/favicon.ico',
+  favicon: 'img/logo/favicon.ico',
   organizationName: 'SLODLC', // Usually your GitHub org/user name.
   projectName: 'SLODLC-WEBSITE', // Usually your repo name.
 
