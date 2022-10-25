@@ -14,7 +14,7 @@ keywords:
 
 ## Introduction
 
-Just as the Software Development Life Cycle enables repeatable, reliable processes for creating good software, the **Service Level Objective Development Life Cycle** (SLODLC) is a repeatable methodology for defining reliability and performance goals for software services across an enterprise. This handbook provides detailed explanations, how-tos, and resources to make it easy for you to adopt the SLODLC, creating a common language and shared context for your organization.
+Just as the Software Development Life Cycle enables repeatable, reliable processes for creating good software, the **Service Level Objective Development Life Cycle** (SLODLC) is a repeatable methodology for defining reliability and performance goals for software services across an enterprise. This handbook provides detailed explanations, how-tos, and resources to make it easy for you to adopt the SLODLC.  It would enable you to create shared context for your organization.
 
 You might think that the adoption of SLO concepts is risky and complicated, but this handbook and the methodology it outlines will clarify what to do to reduce those risks and help you discover a practical and realistic path forward in your SLO adoption journey. For more on the topic of adoption, see the **SLO Adoption Framework** document (to be published soon).
 
