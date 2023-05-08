@@ -13,7 +13,7 @@ keywords:
 # The SLO Development Lifecycle
 
 The Service Level Objective Development Lifecycle (SLODLC) is a repeatable methodology for creating metrics that matter to service-centric organizations. SLODLC was created by practitioners in the community with the intent of creating practical, useful, actionable, step-by-step materials, templates, and examples to aid organizations in their journey to adopt SLOs in order to better quantify user expectations, deliver technology services efficiently, and better manage the inherent tradeoffs in building a digital business, SLODLC is an evolutionary open source project and welcomes input from the community of experts who are driving the SLO revolution.
-<img src="/img/SLO_development_lifecycle_9shape-01.png" width="100%" alt="diagram" alt="resources-diagram" title="SLODLC"></img>
+<img src="/img/slo_development_lifecycle_shape_v3.png" width="100%" alt="diagram" alt="resources-diagram" title="SLODLC"></img>
 
 ## How to use the SLODLC
 

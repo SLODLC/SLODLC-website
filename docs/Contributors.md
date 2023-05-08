@@ -13,7 +13,6 @@ keywords:
 
 ## Founding Members
 - Casey OMara, Oracle
-- Christopher Flaesch, Realogic Solutions
 - Gwen De Leon, IAG
 - Jan Ritter, Trustedshops
 - Jason Meltzer, Contino
