@@ -70,11 +70,11 @@ _Please describe below._
     1. Rationale: After 3 months after GoLive of our service, we struggle to provide a reliable Chatbot, handling multiple customer conversations
     2. Owner: Chatbot Team
 2. Goal: Improve Chatbot offering times
-    3. Rationale: We are experiencing occasional slow times (according to customer surveys - those are unsatisfactory) of offering preparation with a comparison of prepaid offers
-    4. Owner: Chatbot Team
+    1. Rationale: We are experiencing occasional slow times (according to customer surveys - those are unsatisfactory) of offering preparation with a comparison of prepaid offers
+    2. Owner: Chatbot Team
 3. Goal: Build scaling capabilities enabling future service growth
-    5. Rationale: We are planning to move to a cloud environment (migration) from our present on-premise, dedicated server solution
-    6. Owner: Chatbot Team
+    1. Rationale: We are planning to move to a cloud environment (migration) from our present on-premise, dedicated server solution
+    2. Owner: Chatbot Team
 
 
 ## 1.3.Business Investment Costs vs. Return
@@ -136,11 +136,11 @@ _Please describe your baseline below. Describe requirements, for particular serv
     1. Acceptance Criteria: New SLIs and SLOs contributing to goals achievement
     2. Owner: Chatbot Team
 2. Requirement or Service: Chatbot back-end service
-    3. Acceptance Criteria: New SLIs and SLOs contributing to goals achievement
-    4. Owner: Chatbot Team
+    1. Acceptance Criteria: New SLIs and SLOs contributing to goals achievement
+    2. Owner: Chatbot Team
 3. Requirement or Service: API calls
-    5. Acceptance Criteria: New SLIs and SLOs contributing to goals achievement
-    6. Owner: Chatbot Team
+    1. Acceptance Criteria: New SLIs and SLOs contributing to goals achievement
+    2. Owner: Chatbot Team
 
 
 ## 1.10.Milestones
@@ -190,15 +190,15 @@ _Please describe below._
 1. Stakeholder: John Smith, Senior PM, jsmith@bestprepaidgsm.com
     1. Group/Persona: The Team
 2. Stakeholder: Joe Doe, SRE, jdoe@bestprepaidgsm.com
-    2. Group/Persona: The Team
+    1. Group/Persona: The Team
 3. Stakeholder: Chatbot Team (Developers, DevOps)
-    3. Group/Persona: The Team
+    1. Group/Persona: The Team
 4. Stakeholder: Ellis Carr, Product Owner
-    4. Group/Persona: The Business
+    1. Group/Persona: The Business
 5. Stakeholder: Daniel Burton, IT Director
-    5. Group/Persona: The Business - Sponsor
+    1. Group/Persona: The Business - Sponsor
 6. Stakeholder: Secret Customer (external friendly tester)
-    6. Group/Persona: The User
+    1. Group/Persona: The User
 
 
 # 3.Define Desired Outcome
@@ -211,11 +211,11 @@ _Please describe below - define at least one goal per Key Stakeholder group (Use
     1. Outcome: SLIs/SLOs published in the platform, evaluated and tested
     2. Benefit: Increased Customer Happiness, more Customers
 2. Goal: Improve Chatbot offering times
-    3. Outcome: SLIs/SLOs published in the platform, evaluated and tested
-    4. Benefit: Increased Customer Happiness, more Customers
+    1. Outcome: SLIs/SLOs published in the platform, evaluated and tested
+    2. Benefit: Increased Customer Happiness, more Customers
 3. Goal: Build scaling capabilities enabling future service growth
-    5. Outcome: SLIs/SLOs published in the platform, evaluated and tested assessment document
-    6. Benefit: Input for migration with volumetric, enabler for the migration project
+    1. Outcome: SLIs/SLOs published in the platform, evaluated and tested assessment document
+    2. Benefit: Input for migration with volumetric, enabler for the migration project
 
 
 # 4.Memo/Notes
