@@ -62,9 +62,6 @@ const config = {
       }),
     ],
   ],
-  plugins: [
-    'docusaurus-plugin-hubspot',
-  ],
   themes: [
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
@@ -87,6 +84,9 @@ const config = {
         }
       },
     ]
+  ],
+  plugins: [
+    'docusaurus-plugin-hubspot',
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -158,12 +158,12 @@ const config = {
         ],
         copyright: `© 2022 - ${new Date().getFullYear()} Nobl9. All rights reserved.`,
       },
+      hubspot: {
+        accountId: 7186369,
+      },
       prism: {
         theme: codeThemes.github,
         darkTheme: codeThemes.github,
-      },
-      hubspot: {
-        accountId: 7186369,
       },
     }),
     stylesheets: [
