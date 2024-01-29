@@ -62,6 +62,9 @@ const config = {
       }),
     ],
   ],
+  plugins: [
+    'docusaurus-plugin-hubspot',
+  ],
   themes: [
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
@@ -158,6 +161,9 @@ const config = {
       prism: {
         theme: codeThemes.github,
         darkTheme: codeThemes.github,
+      },
+      hubspot: {
+        accountId: 7186369,
       },
     }),
     stylesheets: [
